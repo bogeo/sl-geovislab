@@ -1,0 +1,1 @@
+The notecards can be found at the info shelf (next to the front door).

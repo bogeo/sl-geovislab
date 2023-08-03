@@ -1,0 +1,14 @@
+<slobject>
+    <title>EK - Grill  Barbecue</title>
+    <creator>
+        <name>Erlin Kurka</name>
+        <slid></slid>
+    </creator>
+    <commands>
+        <command>/blow fire</command>
+        <command>/light fire</command>
+    </commands>
+    <purchase>
+        <slprice></slprice>
+    </purchase>
+</slobject>
