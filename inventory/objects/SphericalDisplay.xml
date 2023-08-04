@@ -1,7 +1,11 @@
-<slobject>
+<sl-object>
     <title>SphericalDisplay</title>
     <creator>
         <name>Benno Schmidt</name>
-        <slid>BennoSchmidt</slid>
+        <sl-id>BennoSchmidt</sl-id>
     </creator>
-</slobject>
+    <collection>
+        <item>Globe</item>
+        <item>Pedestial</item>
+    </collection>
+</sl-object>

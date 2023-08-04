@@ -1,0 +1,12 @@
+<sl-object>
+    <title>simple presentation board</title>
+    <creator>
+        <name>Leslie</name>
+        <sl-id>laci.coy</sl-id>
+    </creator>
+   <purchase>
+        <slm-description>Simple Presentation Board</slm-description>
+        <slm-seller>Laci Coy</slm-seller>
+        <slm-price>0</slm-price>
+    </purchase>
+</sl-object>
