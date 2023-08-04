@@ -1,10 +1,12 @@
-<slobject>
+<sl-object>
     <title>BR Blue Checkered Leather Couch</title>
     <creator>
         <name>Cullan Suntzu</name>
-        <slid>cullan.suntzu</slid>
+        <sl-id>cullan.suntzu</sl-id>
     </creator>
     <purchase>
-        <slprice></slprice>
+        <slm-description>Beyond Real Blue Checkered Leather Couch</slm-description>
+        <slm-seller>Cullan Suntzu</slm-seller>
+        <slm-price>0</slm-price>
     </purchase>
-</slobject>
+</sl-object>

@@ -1,8 +1,8 @@
-<slobject>
+<sl-object>
     <title>StepUp Free Bistro Set</title>
     <creator>
         <name>Ven</name>
-        <slid>venkellie</slid>
+        <sl-id>venkellie</sl-id>
     </creator>
     <collection>
         <item>Bistro Table Wood</item>
@@ -10,6 +10,8 @@
         <item>Bistro Stool Purple</item>
     </collection>
     <purchase>
-        <slprice></slprice>
+        <slm-description>StepUp Free Bistro Set</slm-description>
+        <slm-seller>Miguelito Cooperstone</slm-seller>
+        <slm-price>0</slm-price>
     </purchase>
-</slobject>
+</sl-object>

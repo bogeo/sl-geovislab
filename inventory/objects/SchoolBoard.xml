@@ -8,6 +8,7 @@
         <command>/12 my text</command>
     </commands>
     <purchase>
-        <slprice></slprice>
+        <slm-description>Schoolboard</slm-description>
+        <slm-price>1</slm-price>
     </purchase>
 </slobject>

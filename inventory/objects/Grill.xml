@@ -1,14 +1,16 @@
-<slobject>
+<sl-object>
     <title>EK - Grill / Barbecue</title>
     <creator>
         <name>Erlin Kurka</name>
-        <slid>erlin.kurka</slid>
+        <sl-id>erlin.kurka</sl-id>
     </creator>
     <commands>
         <command>/blow fire</command>
         <command>/light fire</command>
     </commands>
     <purchase>
-        <slprice></slprice>
+        <slm-description>EK - Grill / Barbecue</slm-description>
+        <slm-seller>Erlin Kurka</slm-seller>
+        <slm-price>1</slm-price>
     </purchase>
-</slobject>
+</sl-object>

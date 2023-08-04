@@ -1,10 +1,12 @@
-<slobject>
+<sl-object>
     <title>door bell</title>
     <creator>
         <name>MEGHAN</name>
-        <slid>myggen</slid>
+        <sl-id>myggen</sl-id>
     </creator>
     <purchase>
-        <slprice></slprice>
+        <slm-description>door bell for hearing and for deaf</slm-description>
+        <slm-seller>myggen</slm-seller>
+        <slm-price>0</slm-price>
     </purchase>
-</slobject>
+</sl-object>

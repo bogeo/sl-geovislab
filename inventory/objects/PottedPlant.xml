@@ -1,10 +1,12 @@
-<slobject>
+<sl-object>
     <title>C*Spring potted plant Gift</title>
     <creator>
         <name>Chris</name>
-        <slid>christalle.staheli</slid>
+        <sl-id>christalle.staheli</sl-id>
     </creator>
     <purchase>
-        <slprice></slprice>
+        <slm-description>C*Spring potted plant Gift</slm-description>
+        <slm-seller>Christalle Staheli</slm-seller>
+        <slm-price>0</slm-price>
     </purchase>
-</slobject>
+</sl-object>

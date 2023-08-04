@@ -1,10 +1,12 @@
-<slobject>
+<sl-object>
     <title>biscotti</title>
     <creator>
         <name>Elle Mode</name>
-        <slid>elle.mode</slid>
+        <sl-id>elle.mode</sl-id>
     </creator>
     <purchase>
-        <slprice></slprice>
+        <slm-description>BISCOTTI * Copy &amp; Modify * FOOD &amp; DRINKS - BARGAIN SERIES</slm-description>
+        <slm-seller>Elle Mode</slm-seller>
+        <slm-price>3</slm-price>
     </purchase>
-</slobject>
+</sl-object>
