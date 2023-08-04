@@ -1,8 +1,8 @@
 <slobject>
-    <title>EK - Grill  Barbecue</title>
+    <title>EK - Grill / Barbecue</title>
     <creator>
         <name>Erlin Kurka</name>
-        <slid></slid>
+        <slid>erlin.kurka</slid>
     </creator>
     <commands>
         <command>/blow fire</command>

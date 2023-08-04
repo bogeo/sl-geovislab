@@ -4,6 +4,11 @@
         <name>Ven</name>
         <slid>venkellie</slid>
     </creator>
+    <collection>
+        <item>Bistro Table Wood</item>
+        <item>Bistro Stool Blue</item>
+        <item>Bistro Stool Purple</item>
+    </collection>
     <purchase>
         <slprice></slprice>
     </purchase>

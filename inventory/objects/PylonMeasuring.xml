@@ -4,6 +4,10 @@
         <name>4t Resident</name>
         <slid>4t.mildor</slid>
     </creator>
+    <collection>
+        <item>start-position</item>
+        <item>end-position</item>
+    </collection>
     <purchase>
         <slprice></slprice>
     </purchase>
