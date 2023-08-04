@@ -1,11 +1,14 @@
-<slobject>
+<sl-object>
     <title>NotecardInfo</title>
     <creator>
         <name>Benno Schmidt</name>
-        <slid>BennoSchmidt</slid>
+        <sl-id>BennoSchmidt</sl-id>
     </creator>
-    <slcontent>
-        <notecard></notecard>
-        <slscript></slscript>
-    </slcontent>
-</slobject>
+    <prims>
+        <sl-prim>Box</sl-prim>
+    </prims>
+    <content>
+        <sl-notecard></sl-notecard>
+        <sl-script></sl-script>
+    </content>
+</sl-object>

@@ -1,8 +1,8 @@
-<slobject>
+<sl-object>
     <title>Modern Seating</title>
     <creator>
         <name>Ven</name>
-        <slid>venkellie</slid>
+        <sl-id>venkellie</sl-id>
     </creator>
     <collection>
         <item>Modern Seating taupe SQ</item>
@@ -16,4 +16,4 @@
         <slm-seller>Luther Zoilin</slm-seller>
         <slm-price>1</slm-price>
     </purchase>
-</slobject>
+</sl-object>

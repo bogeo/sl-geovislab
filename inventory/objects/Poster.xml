@@ -1,10 +1,13 @@
-<slobject>
+<sl-object>
     <title>Poster</title>
     <creator>
         <name>Benno Schmidt</name>
-        <slid>BennoSchmidt</slid>
+        <sl-id>BennoSchmidt</sl-id>
     </creator>
-    <slcontent>
-        <slscript></slscript>
-    </slcontent>
-</slobject>
+    <prims>
+        <sl-prim>Box</sl-prim>
+    </prims>
+    <content>
+        <sl-script></sl-script>
+    </content>
+</sl-object>

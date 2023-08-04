@@ -1,11 +1,13 @@
-<slobject>
+<sl-object>
     <title>Bright Analog Clock</title>
     <creator>
         <name>Red Mills</name>
-        <slid>red.mills</slid>
+        <sl-id>red.mills</sl-id>
     </creator>
     <purchase>
-        <price></price>
+        <slm-description>Bright Analog Clock - Modern, analog clock with seconds sweep, menu controlled size &amp; colour</slm-description>
+        <slm-seller>Shan Bright</slm-seller>
+        <sl-price>0</sl-price>
     </purchase>
     <comment>The clock shows Pacific Daylight Time (PDT).</comment>
-</slobject>
+</sl-object>

@@ -1,10 +1,10 @@
-<slobject>
+<sl-object>
     <title></title>
     <creator>
-        <name></name>
-        <slid></slid>
+        <sl-name></sl-name>
+        <sl-id></sl-id>
     </creator>
     <purchase>
-        <price></price>
+        <sl-price></sl-price>
     </purchase>
-</slobject>
+</sl-object>

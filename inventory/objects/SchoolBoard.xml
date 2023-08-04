@@ -1,14 +1,15 @@
-<slobject>
+<sl-object>
     <title>schoolboard</title>
     <creator>
         <name>KiaraTara</name>
-        <slid>kiaratara</slid>
+        <sl-id>kiaratara</sl-id>
     </creator>
     <commands>
         <command>/12 my text</command>
     </commands>
     <purchase>
         <slm-description>Schoolboard</slm-description>
+        <slm-seller>KiaraTara</slm-seller>
         <slm-price>1</slm-price>
     </purchase>
-</slobject>
+</sl-object>
