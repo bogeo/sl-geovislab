@@ -1,5 +1,5 @@
-![](https://github.com/bogeo/campus-3d-data-portal/blob/master/BO-Logo.png)
-![](https://github.com/bogeo/campus-3d-data-portal/blob/master/SL-Logo.png)
+![](https://github.com/bogeo/sl-geovislab/blob/master/etc/BO-Logo.png)
+![](https://github.com/bogeo/sl-geovislab/blob/master/etc/SL-Logo.png)
 # Virtual GeoVisLab in Second Life
 
 ## General Information
