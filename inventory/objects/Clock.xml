@@ -1,4 +1,4 @@
-<sl-object>
+<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>Bright Analog Clock</title>
     <creator>
         <name>Red Mills</name>
@@ -7,7 +7,7 @@
     <purchase>
         <slm-description>Bright Analog Clock - Modern, analog clock with seconds sweep, menu controlled size &amp; colour</slm-description>
         <slm-seller>Shan Bright</slm-seller>
-        <sl-price>0</sl-price>
+        <slm-price>0</slm-price>
     </purchase>
     <comment>The clock shows Pacific Daylight Time (PDT).</comment>
 </sl-object>

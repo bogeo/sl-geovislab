@@ -1,7 +1,7 @@
-<sl-object>
+<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
     <title>Information Board</title>
     <creator>
-        <sl-name>Benno Schmidt</sl-name>
+        <name>Benno Schmidt</name>
         <sl-id>BennoSchmidt</sl-id>
     </creator>
     <primitives>

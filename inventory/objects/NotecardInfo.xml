@@ -1,4 +1,4 @@
-<sl-object>
+<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
     <title>NotecardInfo</title>
     <creator>
         <name>Benno Schmidt</name>
@@ -8,7 +8,7 @@
         <sl-prim>Box</sl-prim>
     </primitives>
     <content>
-        <sl-notecard></sl-notecard>
         <sl-script>/scripts/OfferNotecard.lsl</sl-script>
+        <sl-notecard></sl-notecard>
     </content>
 </sl-object>
