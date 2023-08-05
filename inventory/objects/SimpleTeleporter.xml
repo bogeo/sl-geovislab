@@ -8,6 +8,6 @@
         <sl-prim>Pyramid</sl-prim>
     </primitives>
     <content>
-        <sl-script></sl-script>
+        <sl-script>scripts/internal/SimpleTeleporter.lsl</sl-script>
     </content>
 </sl-object>
