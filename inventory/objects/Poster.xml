@@ -8,6 +8,6 @@
         <sl-prim>Box</sl-prim>
     </primitives>
     <content>
-        <sl-script></sl-script>
+        <sl-script>/scripts/ObjectInfo.lsl</sl-script>
     </content>
 </sl-object>

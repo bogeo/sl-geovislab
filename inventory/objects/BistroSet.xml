@@ -14,4 +14,7 @@
         <slm-seller>Miguelito Cooperstone</slm-seller>
         <slm-price>0</slm-price>
     </purchase>
+    <content>
+        <sl-script>/scripts/ObjectInfo.lsl</sl-script>
+    </content>
 </sl-object>
