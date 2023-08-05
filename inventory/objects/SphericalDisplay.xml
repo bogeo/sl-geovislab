@@ -12,4 +12,8 @@
         <sl-prim>Sphere</sl-prim>
         <sl-prim>Box</sl-prim>
     </primitives>
+    <content>
+        <sl-script>/scripts/ChangeTexture.lsl</sl-script>
+        <sl-script>/scripts/ObjectInfo.lsl</sl-script>
+    </content>
 </sl-object>

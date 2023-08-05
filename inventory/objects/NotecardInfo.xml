@@ -9,6 +9,6 @@
     </primitives>
     <content>
         <sl-notecard></sl-notecard>
-        <sl-script></sl-script>
+        <sl-script>/scripts/OfferNotecard.lsl</sl-script>
     </content>
 </sl-object>
