@@ -4,9 +4,9 @@
         <sl-name>Benno Schmidt</sl-name>
         <sl-id>BennoSchmidt</sl-id>
     </creator>
-    <prims>
+    <primitives>
         <sl-prim>Box</sl-prim>
-    </prims>
+    </primitives>
     <content>
         <sl-script></sl-script>
     </content>

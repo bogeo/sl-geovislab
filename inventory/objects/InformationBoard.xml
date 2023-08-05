@@ -1,10 +1,10 @@
 <sl-object>
-    <title></title>
+    <title>Information Board</title>
     <creator>
-        <sl-name></sl-name>
-        <sl-id></sl-id>
+        <sl-name>Benno Schmidt</sl-name>
+        <sl-id>BennoSchmidt</sl-id>
     </creator>
-    <purchase>
-        <sl-price></sl-price>
-    </purchase>
+    <primitives>
+        <sl-prim>Box</sl-prim>
+    </primitives>
 </sl-object>

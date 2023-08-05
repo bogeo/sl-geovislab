@@ -1,13 +1,11 @@
 <sl-object>
-    <title>Poster</title>
+    <title>Nivellierlatte 2 m</title>
+    <description>Nivellierlatte 2.00 m</description>
     <creator>
-        <name>Benno Schmidt</name>
+        <sl-name>Benno Schmidt</sl-name>
         <sl-id>BennoSchmidt</sl-id>
     </creator>
     <primitives>
         <sl-prim>Box</sl-prim>
     </primitives>
-    <content>
-        <sl-script></sl-script>
-    </content>
 </sl-object>

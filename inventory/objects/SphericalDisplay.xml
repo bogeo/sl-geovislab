@@ -8,8 +8,8 @@
         <item>Globe</item>
         <item>Pedestial</item>
     </collection>
-    <prims>
+    <primitives>
         <sl-prim>Sphere</sl-prim>
         <sl-prim>Box</sl-prim>
-    </prims>
+    </primitives>
 </sl-object>
