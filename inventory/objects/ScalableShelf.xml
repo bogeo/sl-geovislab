@@ -1,25 +1,22 @@
 <sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
-    <title>NotecardInfo</title>
-    <description>Information notecards for the guests</description>
+    <title>ScalableShelf</title>
     <creator>
         <name>Benno Schmidt</name>
         <sl-id>BennoSchmidt</sl-id>
     </creator>
     <collection>
-        <item>Reisetipps</item>
-        <item>Freizeittipps</item>
-        <item>Quellcode</item>
+        <item>Shelf</item>
+        <item>Shelf</item>
+        <item>Attachment bar</item>
+        <item>Attachment bar</item>
     </collection>
     <primitives>
         <sl-prim>Box</sl-prim>
         <sl-prim>Box</sl-prim>
         <sl-prim>Box</sl-prim>
+        <sl-prim>Box</sl-prim>
     </primitives>
-    <content>
-        <sl-script>/scripts/OfferNotecard.lsl</sl-script>
-        <sl-notecard></sl-notecard>
-    </content>
     <comment>
-        Objects are located on ScalableShelf inventory object.
+        The shelf can be used to store NotecardInfo objects.
     </comment>
 </sl-object>
