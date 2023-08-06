@@ -1,0 +1,28 @@
+<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Surveying Device</title>
+    <creator>
+        <name>Benno Schmidt</name>
+        <sl-id>BennoSchmidt</sl-id>
+    </creator>
+    <commands>
+        <command>/5 info</command>
+        <command>/5 save</command>
+        <command>/5 diff</command>
+        <command>/5 poly</command>
+        <command>/5 home</command>
+        <command>/5 help</command>
+    </commands>
+    <collection>
+        <item>Head</item>
+        <item>Mounting Bar</item>
+        <item>Measurement Cursor</item>
+    </collection>   
+    <primitives>
+        <sl-prim>Sphere</sl-prim>
+        <sl-prim>Box</sl-prim>
+        <sl-prim>Cylinder</sl-prim>
+    </primitives>
+    <content>
+        <sl-script>/scripts/SurveyingComputer.lsl</sl-script>
+    </content>
+</sl-object>
