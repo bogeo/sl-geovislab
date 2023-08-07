@@ -6,7 +6,7 @@
         <sl-id>BennoSchmidt</sl-id>
     </creator>
     <primitives>
-        <sl-prim>Box</sl-prim>
+        <sl-prim>Prism</sl-prim>
     </primitives>
     <content>
         <sl-script>/scripts/LandParcelInfo.lsl</sl-script>
