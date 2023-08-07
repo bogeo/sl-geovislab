@@ -1,3 +1,5 @@
+// Implements the survey tool's 'field computer'
+
 integer CHANNEL = 5; // change to 0 to deactive channel filter
 
 vector sPos = <0, 0, 0>;
@@ -7,7 +9,6 @@ list points = [];
  
 string region;
 vector regionCorner;
-vector hPos; // home position
 vector lPos; // local position
 vector gPos; // global position
 string lPosXStr;
@@ -17,14 +18,42 @@ string gPosXStr;
 string gPosYStr;
 string gPosZStr;
     
+capture()
+{
+    region = llGetRegionName();
+    regionCorner = llGetRegionCorner(); 
+
+    lPos = llGetPos(); 
+    lPosXStr = (string) (lPos.x) + "m";
+    lPosYStr = (string) (lPos.y) + "m";
+    lPosZStr = (string) (lPos.z) + "m";
+        
+    gPos = lPos + regionCorner; 
+    gPosXStr = (string) (gPos.x) + "m";
+    gPosYStr = (string) (gPos.y) + "m";
+    gPosZStr = (string) (gPos.z) + "m";
+}
+
+info() 
+{
+    llSay(0, "\nRegion name: " + region); 
+    llSay(0, "Region corner: " + (string) regionCorner); 
+        
+    llSay(0, "Local prim position:");
+    llSay(0, "X: " + lPosXStr); 
+    llSay(0, "Y: " + lPosYStr); 
+    llSay(0, "Z: " + lPosZStr); 
+        
+    llSay(0, "Global prim position:");
+    llSay(0, "X: " + gPosXStr); 
+    llSay(0, "Y: " + gPosYStr); 
+    llSay(0, "Z: " + gPosZStr); 
+}
+
 default 
 {
     state_entry()
     {
-        // Store home coordinate:
-        hPos = llGetPos();
-        llSay(0, "\nHome position: " + (string) hPos);
-
         // Registers the "listener" to the object owner:
         listen_handle = llListen(CHANNEL, "", llGetOwner(), "");
         llSay(0, "Listening on channel: " + (string) CHANNEL);        
@@ -32,17 +61,8 @@ default
 
     touch_start(integer total_number)
     {
-        region = llGetRegionName();
-        regionCorner = llGetRegionCorner(); 
-        lPos = llGetLocalPos(); 
-        lPosXStr = (string) (lPos.x) + " m";
-        lPosYStr = (string) (lPos.y) + " m";
-        lPosZStr = (string) (lPos.z) + " m";
-        
-        gPos = lPos + llGetRegionCorner(); 
-        gPosXStr = (string) (gPos.x) + " m";
-        gPosYStr = (string) (gPos.y) + " m";
-        gPosZStr = (string) (gPos.z) + " m";
+        capture();
+        info();
     }
 
     listen(integer channel, string name, key id, string message)
@@ -51,27 +71,19 @@ default
         
         if (message == "info") {
             // received "/5 info" (for CHANNEL = 5) 
-            llSay(0, "\nRegion name: " + region); 
-            llSay(0, "Region corner: " + (string) regionCorner); 
-        
-            llSay(0, "Local prim position:");
-            llSay(0, "X: " + lPosXStr); 
-            llSay(0, "Y: " + lPosYStr); 
-            llSay(0, "Z: " + lPosZStr); 
-        
-            llSay(0, "Global prim position:");
-            llSay(0, "X: " + gPosXStr); 
-            llSay(0, "Y: " + gPosYStr); 
-            llSay(0, "Z: " + gPosZStr); 
+            info();
         }
         
         if (message == "save") {
+            capture();
+            
             if (initialized == FALSE || llVecDist(lPos, sPos) > 0.01) {
                 sPos = lPos;
                 initialized = TRUE;
                 points += lPos; // add new item to point list
                 llSay(0, "\nSaved local coordinates " + (string) lPos);
-                llSay(0, "\nNumber of saved positions: " + (string) llGetListLength(points));
+                integer nPoints = llGetListLength(points);
+                llSay(0, "\nNumber of saved positions: " + (string) nPoints);
             }
             else {
                 llSay(0, "\nIgnored save command (eps filter).");
@@ -103,27 +115,42 @@ default
             }   
         } 
          
-        if (message == "home") {  
-            points = [];
-            initialized = FALSE;
-            llSay(0, "\nCleared memory.");
-                     
-            vector from = llGetPos();
-            float i;
-            vector tPos;
-            vector delta = hPos - from;
-            for (i = 0; i < 1; i = i + 0.05) {
-                vector delta = <i * delta.x, i * delta.y, i * delta.z>;
-                llSetPos(from + delta);
+        if (message == "export") {  
+            integer nPoints = llGetListLength(points); 
+            llSay(0, " ");
+             
+            if (nPoints == 0) {
+                llSay(0, "Pointlist is empty.");
             } 
-            llSetPos(hPos);
-            llSay(0, "Brought surveying device back home.");
-            llSay(0, "Home position: " + (string) hPos);
+            else {
+                integer i;
+                llSay(0, "<VRPosExport ver='1.0'>");
+                llSay(0, "  <PointSequence>");
+                for (i = 0; i < nPoints; i++) {
+                    string textline = "    <gml:Point gml:id='";
+                    textline += (string) (i + 1);
+                    textline += "' srsName='SLglobal'>";
+                    llSay(0, textline);
+                    textline = "      <gml:pos>";
+                    vector point = llList2Vector(points, i);
+                    textline += (string) point.x;
+                    textline += " ";
+                    textline += (string) point.y;
+                    textline += " ";
+                    textline += (string) point.z;
+                    textline += "</gml:pos>";  
+                    llSay(0, textline);
+                    llSay(0, "    </gml:Point>");
+                    llSay(0, "-> " + (string) point.x);
+                }
+                llSay(0, "  </PointSequence>");
+                llSay(0, "</VRPosExport>");
+            }   
         }
-        
+
         if (message == "help") {  
-            llSay(0, "\nCommand list: info save diff poly home");
-            llSay(0, "Touch device head to capture coordinates.");
+            llSay(0, "\nCommand list: info save diff poly export");
+            llSay(0, "Touch device head to capture coordinates without storing them.");
         }
     }
 }
