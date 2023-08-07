@@ -9,5 +9,8 @@
         <slm-seller>Shan Bright</slm-seller>
         <slm-price>0</slm-price>
     </purchase>
-    <comment>The clock shows Pacific Daylight Time (PDT).</comment>
+    <content>
+        <sl-script>scripts/external/Bright Analog Clock script #001.lsl</sl-script>
+    </content>
+    <comment>The clock shows Pacific Daylight Time (PDT), which is Second Life time (SLT).</comment>
 </sl-object>

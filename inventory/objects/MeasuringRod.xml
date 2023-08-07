@@ -1,0 +1,13 @@
+<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>BSH - Measuring Rod MESH</title>
+    <description>Messstab</description>
+    <creator>
+        <name>Matze Shinn</name>
+        <sl-id>matze.shinn</sl-id>
+    </creator>
+    <purchase>
+        <slm-description>BSH - Measuring Rod MESH</slm-description>
+        <slm-seller>BSH Bauunternehmen Shinn &amp; Haalan</slm-seller>
+        <slm-price>10</slm-price>
+    </purchase>
+</sl-object>

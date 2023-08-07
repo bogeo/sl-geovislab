@@ -1,6 +1,6 @@
 <sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>Nivellierlatte 2 m</title>
-    <description>Nivellierlatte 2.00 m</description>
+    <description>Nivellierlatte 2.00m</description>
     <creator>
         <name>Benno Schmidt</name>
         <sl-id>BennoSchmidt</sl-id>
