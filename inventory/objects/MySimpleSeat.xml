@@ -1,7 +1,7 @@
 <sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
     <title>MySimpleSeat</title>
     <creator>
-        <name>Benno Schmidt</name>
+        <name>Jeno Yūrej</name>
         <sl-id>BennoSchmidt</sl-id>
     </creator>
     <primitives>
