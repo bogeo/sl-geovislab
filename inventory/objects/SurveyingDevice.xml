@@ -27,4 +27,9 @@
     <content>
         <sl-script>/scripts/SurveyingComputer.lsl</sl-script>
     </content>
+    <function>
+        <information/>
+        <survey/>
+        <training/>
+    </function>
 </sl-object>

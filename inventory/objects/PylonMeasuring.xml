@@ -13,4 +13,9 @@
         <slm-seller>4t Mildor</slm-seller>
         <slm-price>99</slm-price>
     </purchase>
+    <room>2</room>
+    <function>
+        <information/>
+        <survey/>
+    </function>
 </sl-object>

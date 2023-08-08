@@ -50,8 +50,37 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="room" type="Room" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="function" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="coziness" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="decision" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="familiarity" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="information" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="listen" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="navigate" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="orientation" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="relax" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="request" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="survey" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="talk" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="training" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
         <xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:simpleType name="Room">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="outdoor"/>
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+      <xs:enumeration value="3"/>
+      <xs:enumeration value="4"/>
+      <xs:enumeration value="5"/>
+    </xs:restriction>
+  </xs:simpleType>
 </xs:schema>

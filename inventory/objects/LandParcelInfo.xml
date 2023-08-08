@@ -11,4 +11,9 @@
     <content>
         <sl-script>/scripts/LandParcelInfo.lsl</sl-script>
     </content>
+    <room>2</room>
+    <function>
+        <information/>
+        <orientation/>
+    </function>
 </sl-object>

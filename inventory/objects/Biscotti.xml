@@ -9,4 +9,8 @@
         <slm-seller>Elle Mode</slm-seller>
         <slm-price>3</slm-price>
     </purchase>
+    <room>1</room>
+    <function>
+        <coziness/>
+    </function>
 </sl-object>

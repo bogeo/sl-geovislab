@@ -10,4 +10,8 @@
     <content>
         <sl-script>scripts/internal/SimpleTeleporter.lsl</sl-script>
     </content>
+    <room>3</room>
+    <function>
+        <navigate/>
+    </function>
 </sl-object>

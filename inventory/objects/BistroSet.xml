@@ -17,4 +17,13 @@
     <content>
         <sl-script>/scripts/ObjectInfo.lsl</sl-script>
     </content>
+    <room>1</room>
+    <function>
+        <coziness/>
+        <decision/>
+        <familiarity/>
+        <listen/>
+        <relax/>
+        <talk/>
+    </function>
 </sl-object>

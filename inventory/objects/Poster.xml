@@ -10,4 +10,7 @@
     <content>
         <sl-script>/scripts/ObjectInfo.lsl</sl-script>
     </content>
+    <function>
+        <information/>
+    </function>
 </sl-object>

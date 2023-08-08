@@ -13,4 +13,11 @@
         <slm-seller>Erlin Kurka</slm-seller>
         <slm-price>1</slm-price>
     </purchase>
+    <room>outdoor</room>
+    <function>
+        <decision/>
+        <listen/>
+        <relax/>
+        <talk/>
+    </function>
 </sl-object>

@@ -16,6 +16,10 @@
         <sl-prim>Box</sl-prim>
         <sl-prim>Box</sl-prim>
     </primitives>
+    <function>
+        <familiarity/>
+        <orientation/>
+    </function>
     <comment>
         The shelf can be used to store NotecardInfo objects.
     </comment>

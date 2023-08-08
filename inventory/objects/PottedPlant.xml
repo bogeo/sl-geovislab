@@ -9,4 +9,8 @@
         <slm-seller>Christalle Staheli</slm-seller>
         <slm-price>0</slm-price>
     </purchase>
+    <room>1</room>    
+    <function>
+        <familiarity/>
+    </function>
 </sl-object>

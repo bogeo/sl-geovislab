@@ -16,4 +16,8 @@
         <sl-script>/scripts/ChangeTexture.lsl</sl-script>
         <sl-script>/scripts/ObjectInfo.lsl</sl-script>
     </content>
+    <function>
+        <familiarity/>
+        <information/>
+    </function>
 </sl-object>

@@ -10,4 +10,9 @@
     <content>
         <sl-script>/scripts/SitTarget.lsl</sl-script>
     </content>
+    <room>outdoor</room>
+    <function>
+        <listen/>
+        <relax/>
+    </function>
 </sl-object>

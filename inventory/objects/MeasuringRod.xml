@@ -10,4 +10,11 @@
         <slm-seller>BSH Bauunternehmen Shinn &amp; Haalan</slm-seller>
         <slm-price>10</slm-price>
     </purchase>
+    <room>2</room>
+    <function>
+        <information/>
+        <listen/>
+        <relax/>
+        <survey/>
+    </function>
 </sl-object>

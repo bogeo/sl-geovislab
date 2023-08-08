@@ -8,4 +8,9 @@
     <primitives>
         <sl-prim>Box</sl-prim>
     </primitives>
+    <room>2</room>
+    <function>
+        <familiarity/>
+        <survey/>
+    </function>
 </sl-object>

@@ -9,4 +9,8 @@
         <slm-seller>myggen</slm-seller>
         <slm-price>0</slm-price>
     </purchase>
+    <function>
+        <information/>
+        <request/>
+    </function>
 </sl-object>

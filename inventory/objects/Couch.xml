@@ -9,4 +9,11 @@
         <slm-seller>Cullan Suntzu</slm-seller>
         <slm-price>0</slm-price>
     </purchase>
+    <room>1</room>
+    <function>
+        <coziness/>
+        <listen/>
+        <relax/>
+        <talk/>
+    </function>
 </sl-object>

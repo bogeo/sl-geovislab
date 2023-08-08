@@ -9,4 +9,9 @@
         <slm-seller>Laci Coy</slm-seller>
         <slm-price>0</slm-price>
     </purchase>
+    <room>5</room>
+    <function>
+        <information/>
+        <listen/>
+    </function>
 </sl-object>

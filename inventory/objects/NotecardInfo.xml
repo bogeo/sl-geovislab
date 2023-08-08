@@ -19,6 +19,10 @@
         <sl-script>/scripts/OfferNotecard.lsl</sl-script>
         <sl-notecard></sl-notecard>
     </content>
+    <room>1</room>
+    <function>
+        <information/>
+    </function>
     <comment>
         Objects are located on ScalableShelf inventory object.
     </comment>

@@ -23,4 +23,7 @@
     <content>
         <sl-script>/scripts/Voter.lsl</sl-script>
     </content>
+    <function>
+        <decision/>
+    </function>
 </sl-object>
