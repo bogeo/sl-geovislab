@@ -1,0 +1,33 @@
+<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Simple Voter</title>
+    <description>
+        Simple voting system, sonsisting of a green, yellow, orange and red voter object.
+    </description>
+    <creator>
+        <name>Benno Schmidt</name>
+        <sl-id>BennoSchmidt</sl-id>
+    </creator>
+    <commands>
+        <command>reset</command>
+        <command>show</command>     
+        <command>hide</command>
+        <command>float</command>
+        <command>nofloat</command>
+        <command>list</command>
+        <command>help</command>
+    </commands>
+    <collection>
+        <item>Simple Voter - Green</item>
+        <item>Simple Voter - Yellow</item>
+        <item>Simple Voter - Orange</item>
+        <item>Simple Voter - Red</item>
+    </collection>   
+    <primitives>
+        <sl-prim>Prism</sl-prim>
+        <sl-prim>Prism</sl-prim>
+        <sl-prim>Prims</sl-prim>
+    </primitives>
+    <content>
+        <sl-script>/scripts/Voter.lsl</sl-script>
+    </content>
+</sl-object>
