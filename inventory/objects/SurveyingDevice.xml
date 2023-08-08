@@ -27,7 +27,4 @@
     <content>
         <sl-script>/scripts/SurveyingComputer.lsl</sl-script>
     </content>
-    <comment>
-        Precision: 0.01 
-    </comment>
 </sl-object>

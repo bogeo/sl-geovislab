@@ -1,7 +1,11 @@
-// Implements the survey tool's 'field computer'
+// Implements the survey tool's "field computer"
 
+// Constants:
 integer CHANNEL = 5; // change to 0 to deactive channel filter
+vector HEAD_COLOR = <0.60, 0.52, 0.13>;
+vector FLASH_COLOR = <0.80, 0.80, 0.00>;
 
+// Local Variables:
 vector sPos = <0, 0, 0>;
 integer initialized = FALSE;
 integer listen_handle;
@@ -18,23 +22,25 @@ string gPosXStr;
 string gPosYStr;
 string gPosZStr;
     
-capture()
-{
+capture() // capture current object location
+{  
+    flash();
+    
     region = llGetRegionName();
     regionCorner = llGetRegionCorner(); 
 
     lPos = llGetPos(); 
-    lPosXStr = (string) (lPos.x) + "m";
-    lPosYStr = (string) (lPos.y) + "m";
-    lPosZStr = (string) (lPos.z) + "m";
+    lPosXStr = (string) (lPos.x) + " m";
+    lPosYStr = (string) (lPos.y) + " m";
+    lPosZStr = (string) (lPos.z) + " m";
         
     gPos = lPos + regionCorner; 
-    gPosXStr = (string) (gPos.x) + "m";
-    gPosYStr = (string) (gPos.y) + "m";
-    gPosZStr = (string) (gPos.z) + "m";
+    gPosXStr = (string) (gPos.x) + " m";
+    gPosYStr = (string) (gPos.y) + " m";
+    gPosZStr = (string) (gPos.z) + " m";
 }
 
-info() 
+info() // info output in chat window
 {
     llSay(0, "\nRegion name: " + region); 
     llSay(0, "Region corner: " + (string) regionCorner); 
@@ -50,13 +56,28 @@ info()
     llSay(0, "Z: " + gPosZStr); 
 }
 
+flash() // head flashing (just to improve user experience)
+{
+    llSleep(0.5);  
+    llSetColor(FLASH_COLOR, ALL_SIDES);
+    llSleep(1);  
+    llSetColor(HEAD_COLOR, ALL_SIDES);
+    llSleep(0.25);  
+    llSetColor(FLASH_COLOR, ALL_SIDES);
+    llSleep(0.5);  
+    llSetColor(HEAD_COLOR, ALL_SIDES);
+}
+
 default 
 {
     state_entry()
     {
+        // Set head color:
+        llSetColor(HEAD_COLOR, ALL_SIDES);    
+
         // Registers the "listener" to the object owner:
         listen_handle = llListen(CHANNEL, "", llGetOwner(), "");
-        llSay(0, "Listening on channel: " + (string) CHANNEL);        
+        llSay(0, "Listening on channel: " + (string) CHANNEL);    
     }
 
     touch_start(integer total_number)
@@ -83,7 +104,7 @@ default
                 points += lPos; // add new item to point list
                 llSay(0, "\nSaved local coordinates " + (string) lPos);
                 integer nPoints = llGetListLength(points);
-                llSay(0, "\nNumber of saved positions: " + (string) nPoints);
+                llSay(0, "Number of saved positions: " + (string) nPoints);
             }
             else {
                 llSay(0, "\nIgnored save command (eps filter).");
@@ -147,7 +168,7 @@ default
                 llSay(0, "</VRPosExport>");
             }   
         }
-
+        
         if (message == "help") {  
             llSay(0, "\nCommand list: info save diff poly export");
             llSay(0, "Touch device head to capture coordinates without storing them.");
