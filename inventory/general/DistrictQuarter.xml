@@ -1,5 +1,6 @@
 <sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>District quarter</title>
+    <room>outdoor</room>
     <function>
         <freedom/>
         <relax/>
