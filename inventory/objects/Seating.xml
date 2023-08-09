@@ -18,6 +18,7 @@
     </purchase>
     <room>5</room>
     <function>
+        <collaboration/>
         <coziness/>
         <listen/>
         <talk/>

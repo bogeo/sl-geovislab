@@ -4,7 +4,7 @@
       <xs:sequence>
         <xs:element name="title" type="xs:string"/>
         <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1"/>
-        <xs:element name="creator">
+        <xs:element name="creator" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="name" type="xs:string"/>
@@ -54,9 +54,11 @@
         <xs:element name="function" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
+              <xs:element name="collaboration" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="coziness" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="decision" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="familiarity" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="freedom" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="information" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="listen" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="navigate" type="xs:string" minOccurs="0" maxOccurs="1"/>

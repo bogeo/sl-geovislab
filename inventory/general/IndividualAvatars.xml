@@ -1,0 +1,10 @@
+<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Individual avatars</title>
+    <function>
+        <collaboration/>
+        <listen/>
+        <request/>
+        <talk/>
+        <training/>
+     </function>
+</sl-object>

@@ -11,6 +11,7 @@
         <sl-script>/scripts/GroupInvitation.lsl</sl-script>
     </content>
     <function>
+        <collaboration/>
         <information/>
     </function>
 </sl-object>

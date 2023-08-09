@@ -24,6 +24,7 @@
         <sl-script>/scripts/Voter.lsl</sl-script>
     </content>
     <function>
+        <collaboration/>
         <decision/>
     </function>
 </sl-object>

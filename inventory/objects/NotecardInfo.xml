@@ -21,6 +21,7 @@
     </content>
     <room>1</room>
     <function>
+        <collaboration/>
         <information/>
     </function>
     <comment>

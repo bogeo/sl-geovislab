@@ -19,6 +19,7 @@
     </content>
     <room>1</room>
     <function>
+        <collaboration/>
         <coziness/>
         <decision/>
         <familiarity/>

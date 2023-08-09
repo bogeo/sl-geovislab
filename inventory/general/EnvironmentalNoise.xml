@@ -1,0 +1,11 @@
+<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Environmental noise</title>
+    <description>
+        Birdsong, occasional distant, low honking of cars and babies crying 
+        and similar subtle ambient sounds.
+    </description>
+    <function>
+        <orientation/>
+        <relax/>
+    </function>
+</sl-object>

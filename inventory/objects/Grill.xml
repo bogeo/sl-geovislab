@@ -15,6 +15,7 @@
     </purchase>
     <room>outdoor</room>
     <function>
+        <collaboration/>
         <decision/>
         <listen/>
         <relax/>
