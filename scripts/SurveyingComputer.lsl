@@ -162,7 +162,6 @@ default
                     textline += "</gml:pos>";  
                     llSay(0, textline);
                     llSay(0, "    </gml:Point>");
-                    llSay(0, "-> " + (string) point.x);
                 }
                 llSay(0, "  </PointSequence>");
                 llSay(0, "</VRPosExport>");
