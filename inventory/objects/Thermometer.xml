@@ -1,0 +1,18 @@
+<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Thermometer</title>
+    <creator>
+        <name>Jeno Yūrej</name>
+        <sl-id>BennoSchmidt</sl-id>
+    </creator>
+    <primitives>
+        <sl-prim>Box</sl-prim>
+        <sl-prim>Box</sl-prim>
+    </primitives>
+    <content>
+        <sl-script>/scripts/WeatherDataVisuualization.lsl</sl-script>
+    </content>
+    <function>
+        <collaboration/>
+        <information/>
+    </function>
+</sl-object>
