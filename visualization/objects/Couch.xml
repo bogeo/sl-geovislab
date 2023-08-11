@@ -1,4 +1,4 @@
-<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sl-element xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>BR Blue Checkered Leather Couch</title>
     <creator>
         <name>Cullan Suntzu</name>
@@ -16,4 +16,4 @@
         <relax/>
         <talk/>
     </function>
-</sl-object>
+</sl-element>

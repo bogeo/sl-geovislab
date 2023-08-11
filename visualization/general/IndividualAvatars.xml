@@ -1,4 +1,4 @@
-<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sl-element xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>Individual avatars</title>
     <function>
         <collaboration/>
@@ -7,4 +7,4 @@
         <talk/>
         <training/>
      </function>
-</sl-object>
+</sl-element>

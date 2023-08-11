@@ -1,4 +1,4 @@
-<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+<sl-element xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
     <title>NotecardInfo</title>
     <description>Information notecards for the guests</description>
     <creator>
@@ -27,4 +27,4 @@
     <comment>
         Objects are located on ScalableShelf inventory object.
     </comment>
-</sl-object>
+</sl-element>

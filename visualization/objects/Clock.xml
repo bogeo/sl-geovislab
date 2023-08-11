@@ -1,4 +1,4 @@
-<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sl-element xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>Bright Analog Clock</title>
     <creator>
         <name>Red Mills</name>
@@ -18,4 +18,4 @@
         <information/>
     </function>
     <comment>The clock shows Pacific Daylight Time (PDT), which is Second Life time (SLT).</comment>
-</sl-object>
+</sl-element>

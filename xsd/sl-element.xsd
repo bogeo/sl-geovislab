@@ -1,5 +1,5 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="sl-object">
+  <xs:element name="sl-element">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="title" type="xs:string"/>
