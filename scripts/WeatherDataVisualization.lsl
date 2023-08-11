@@ -1,13 +1,21 @@
 // This script controls the display of the temperature resp. humidity
 // values of the real GeoVisLab as reported by the "weather service". 
 
-//string JSON_PROPERTY = "temperature";
+// Content requested from waether service
+//string JSON_PROPERTY = "temperature"; 
 string JSON_PROPERTY = "humidity";
-float BAR_LENGTH_MAX = 0.625;
-float BAR_POS_Z = 26.917; 
+// Request interval in seconds:
+float REQUEST_INTERVAL = 300.0;
+
 vector FLOAT_TEXT_COLOR = <1.0, 1.0, 0.0>;
 float FLOAT_TEXT_OPACITY = 1.0; 
 
+// Caution: The BAR_* parameters given below depend on 
+// the object's individual geometry:
+float BAR_LENGTH_MAX = 0.625;
+float BAR_POS_Z = 26.917; 
+
+// Global variables:
 key httpRequestId;
 string url; 
 float val;
@@ -15,6 +23,7 @@ string unit;
 vector barColor;
 integer showFloatText = FALSE;
 
+// Object settings in SL:
 // Position [m]:
 // X: 74.891
 // Y: 96.608
@@ -28,8 +37,26 @@ integer showFloatText = FALSE;
 // Y: 0.0
 // Z: 0.0
 
+callWeatherService() 
+{
+    // Calls the GeoVisLab's weather service
+
+    // HTTP connection parameters:
+    url = "http://193.175.84.40:15000/v2/entities/urn:ngsi-ld:weather:001";
+    httpRequestId = llHTTPRequest(
+        url, 
+        [ 
+            HTTP_METHOD, "GET",
+            HTTP_CUSTOM_HEADER, "fiware-service", "hsbokanal",
+            HTTP_CUSTOM_HEADER, "fiware-servicepath", "/"
+        ],
+        "");
+}
+
 displayResult(float val) 
 {
+    // Displays the query result
+    
     float percentage = 42;
     unit = "";
     barColor = <0.0, 0.0, 1.0>; // should be a dummy ;-)
@@ -81,11 +108,13 @@ displayResult(float val)
     else {
         sizeBar(percentage);
     }
-    colorBar(percentage);
+    colorBar();
 }
 
 displayFloatText(integer val) 
 {
+    // Displays the result as floating text
+    
     string str = JSON_PROPERTY + " = ";
     str += ((string) val) + unit;
     llSetText(
@@ -96,6 +125,8 @@ displayFloatText(integer val)
  
 hideFloatText() 
 {
+    // Hides the floating text display
+
     llSetText(
         "", 
         FLOAT_TEXT_COLOR, 
@@ -104,6 +135,8 @@ hideFloatText()
 
 reportValueInChat(integer val) 
 {
+    // Displays the result in the chat window
+
     string str = JSON_PROPERTY + " = ";
     str += ((string) val) + unit;
     llOwnerSay(str);
@@ -111,14 +144,17 @@ reportValueInChat(integer val)
 
 sizeBar(float percentage) 
 {
+    // Sets the size of the bar display ("mercury column")
+
     vector pos = llGetPos();
     vector size = llGetScale();
+    
     llSetScale(<
         size.x, 
         size.y, 
         percentage * BAR_LENGTH_MAX
     >);
-    llSay(0, "pre: " + (string) pos);    
+
     llSetPos(<
         pos.x,
         pos.y,
@@ -128,7 +164,11 @@ sizeBar(float percentage)
     // inside a group...
 }
 
-colorBar(float percentage) {
+colorBar() 
+{
+    // Sets the bar color according to the value 
+    // held in the global variable "barColor"
+    
     llSetColor(barColor, ALL_SIDES);
 }
     
@@ -136,24 +176,27 @@ default
 {
     state_entry()
     {
+        // Asset info (could be useful, if object gets lost...): 
         llOwnerSay("\nMy key: " + (string) llGetKey());
         if (llGetLinkNumber() > 0) {
             llOwnerSay("Link key: " + (string) llGetLinkKey(llGetLinkNumber()));
         }
 
-        url = "http://193.175.84.40:15000/v2/entities/urn:ngsi-ld:weather:001";
+        // Connect to the GeoVisLab's weather service: 
+        callWeatherService();
         llSay(0, "Service URL: " + url);
-        httpRequestId = llHTTPRequest(
-            "http://193.175.84.40:15000/v2/entities/urn:ngsi-ld:weather:001", 
-            [ 
-                HTTP_METHOD, "GET",
-                HTTP_CUSTOM_HEADER, "fiware-service", "hsbokanal",
-                HTTP_CUSTOM_HEADER, "fiware-servicepath", "/"
-            ],
-            "");
+        llSetTimerEvent(REQUEST_INTERVAL); // activates timer
+            
+        // Initial bar size (visualization):
         sizeBar(1.0);
     }
 
+    timer()
+    {
+        callWeatherService();
+        llSay(0, "Requested service " + url + "...");
+    }
+   
     touch_start(integer total_number)
     {
         if (showFloatText == FALSE) {
