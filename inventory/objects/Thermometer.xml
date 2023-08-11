@@ -9,8 +9,9 @@
         <sl-prim>Box</sl-prim>
     </primitives>
     <content>
-        <sl-script>/scripts/WeatherDataVisuualization.lsl</sl-script>
+        <sl-script>/scripts/WeatherDataVisualization.lsl</sl-script>
     </content>
+    <room>1</room>
     <function>
         <collaboration/>
         <information/>

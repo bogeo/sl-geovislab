@@ -11,6 +11,7 @@
     <content>
         <sl-script>/scripts/WeatherDataVisuualization.lsl</sl-script>
     </content>
+    <room>1</room>
     <function>
         <collaboration/>
         <information/>

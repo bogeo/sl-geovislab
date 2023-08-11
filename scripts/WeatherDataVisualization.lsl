@@ -1,4 +1,4 @@
-// Control the display of the temperature respectively humidity
+// This script controls the display of the temperature resp. humidity
 // values of the real GeoVisLab as reported by the "weather service". 
 
 string JSON_PROPERTY = "temperature";
@@ -9,9 +9,11 @@ vector FLOAT_TEXT_COLOR = <1.0, 1.0, 0.0>;
 float FLOAT_TEXT_OPACITY = 1.0; 
 
 key httpRequestId;
-string url;
+string url; 
+float val;
 string unit;
 vector barColor;
+integer showFloatText = FALSE;
 
 // Position [m]:
 // X: 74.891
@@ -31,6 +33,7 @@ displayResult(float val)
     float percentage = 42;
     unit = "";
     barColor = <0.0, 0.0, 1.0>; // should be a dummy ;-)
+    
     if (JSON_PROPERTY == "humidity") {
         percentage = val / 100.0;
         unit = "%";
@@ -44,6 +47,7 @@ displayResult(float val)
             barColor = <0.0, 0.5, 1.0>; // blue/cyan
         }
     }
+    
     if (JSON_PROPERTY == "temperature") {
         percentage = (val + 10.0) / (40.0 + 10.0); 
         unit = "°C";
@@ -57,6 +61,7 @@ displayResult(float val)
             barColor = <1.0, 0.0, 0.0>; // red
         }
     }
+    
     if (percentage < 0.0 || percentage > 1.0) {
         llSay(0, "Internal LSL script error!");
         string str = "Details: JSON_PROPERTY = ";
@@ -66,12 +71,11 @@ displayResult(float val)
         return;
     }
     
-    displayFloatText(llRound(val));
     reportValueInChat(llRound(val));
-    //sizeBar(percentage);
+    sizeBar(percentage);
     // Note: sizeBar(1.0) would reset the bar geometry to 
     // its initial values here.
-    sizeBar(1.0);  
+    //sizeBar(1.0);  
     colorBar(percentage);
 }
 
@@ -82,9 +86,17 @@ displayFloatText(integer val)
     llSetText(
         str, 
         FLOAT_TEXT_COLOR, 
-        FLOAT_TEXT_OPACITY);
+        FLOAT_TEXT_OPACITY);   
 }
  
+hideFloatText() 
+{
+    llSetText(
+        "", 
+        FLOAT_TEXT_COLOR, 
+        FLOAT_TEXT_OPACITY);
+}
+
 reportValueInChat(integer val) 
 {
     string str = JSON_PROPERTY + " = ";
@@ -94,7 +106,6 @@ reportValueInChat(integer val)
 
 sizeBar(float percentage) 
 {
-    llSay(0, (string) percentage);
     vector pos = llGetPos();
     vector size = llGetScale();
     llSetScale(<
@@ -117,6 +128,11 @@ default
 {
     state_entry()
     {
+        llOwnerSay("\nMy key: " + (string) llGetKey());
+        if (llGetLinkNumber() > 0) {
+            llOwnerSay("Link key: " + (string) llGetLinkKey(llGetLinkNumber()));
+        }
+
         url = "http://193.175.84.40:15000/v2/entities/urn:ngsi-ld:weather:001";
         llSay(0, "Service URL: " + url);
         httpRequestId = llHTTPRequest(
@@ -132,6 +148,14 @@ default
 
     touch_start(integer total_number)
     {
+        if (showFloatText == FALSE) {
+            showFloatText = TRUE;
+            displayFloatText(llRound(val));
+        }
+        else {
+            showFloatText = FALSE;
+            hideFloatText();
+        }
     }
 
     http_response(
@@ -149,9 +173,10 @@ default
         // llSay(0, ">" + jsonElem);
         string valStr = llJsonGetValue(jsonElem, ["value"]);
         // llSay(0, ">>" + valStr);
-        float val = (float) valStr;
+        val = (float) valStr;
         // llSay(0, ">>>" + (string) val);
 
         displayResult(val);        
     }
 }
+ 
