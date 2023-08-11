@@ -13,6 +13,7 @@
         <sl-script>scripts/external/Bright Analog Clock script #001.lsl</sl-script>
     </content>
     <function>
+        <bridge/>
         <familiarity/>
         <information/>
     </function>

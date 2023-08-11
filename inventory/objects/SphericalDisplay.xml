@@ -17,6 +17,7 @@
         <sl-script>/scripts/ObjectInfo.lsl</sl-script>
     </content>
     <function>
+        <bridge/>
         <familiarity/>
         <information/>
     </function>

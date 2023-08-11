@@ -11,6 +11,7 @@
         <sl-script>/scripts/ObjectInfo.lsl</sl-script>
     </content>
     <function>
+        <bridge/>
         <information/>
     </function>
 </sl-object>

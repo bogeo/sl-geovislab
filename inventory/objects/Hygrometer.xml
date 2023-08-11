@@ -13,6 +13,7 @@
     </content>
     <room>1</room>
     <function>
+        <bridge/>
         <collaboration/>
         <information/>
     </function>

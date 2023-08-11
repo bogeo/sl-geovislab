@@ -10,6 +10,7 @@
         <slm-price>0</slm-price>
     </purchase>
     <function>
+        <bridge/>
         <information/>
     </function>
 </sl-object>
