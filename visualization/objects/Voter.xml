@@ -1,4 +1,4 @@
-<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>Simple Voter</title>
     <description>
         Simple voting system, consisting of a green, yellow, orange and red voter object. 
@@ -27,4 +27,4 @@
         <collaboration/>
         <decision/>
     </function>
-</sl-object>
+</sl-element>

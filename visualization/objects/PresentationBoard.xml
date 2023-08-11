@@ -1,10 +1,15 @@
-<sl-element xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>simple presentation board</title>
     <creator>
         <name>Leslie</name>
         <sl-id>laci.coy</sl-id>
     </creator>
-   <purchase>
+    <commands>
+        <command>first slide</command>
+        <command>next slide</command>
+        <command>previous slide</command>
+    </commands>
+    <purchase>
         <slm-description>Simple Presentation Board</slm-description>
         <slm-seller>Laci Coy</slm-seller>
         <slm-price>0</slm-price>

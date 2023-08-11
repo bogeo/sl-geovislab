@@ -1,0 +1,22 @@
+<sl-element category="general" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Avatars gestures</title>
+    <commands>
+        <command>/pointyou</command>
+        <command>/yes</command>
+        <command>/yes!</command>
+        <command>/clap</command>
+        <command>/laugh</command>
+        <command>/no</command>
+        <command>/no!</command>
+        <command>/nya</command>
+        <command>/shrug</command>
+        <command>/wave</command>
+        <command>/hey</command>
+    </commands>
+    <function>
+        <bridge/>
+        <collaboration/>
+        <familiarity/>
+        <talk/>
+    </function>
+</sl-element>

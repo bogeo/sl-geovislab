@@ -1,4 +1,4 @@
-<sl-element xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>VRPos 1.0 Survey Tool</title>
     <description>Positioning System for VR environments and field computer</description>
     <creator>

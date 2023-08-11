@@ -1,0 +1,12 @@
+<sl-element category="general" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Avatars navigation</title>
+    <commands>
+        <command>Walk</command>
+        <command>Fly</command>
+        <command>Ride</command>
+        <command>Teleport</command>
+    </commands>
+    <function>
+        <navigate/>
+    </function>
+</sl-element>

@@ -1,4 +1,4 @@
-<sl-object xsi:noNamespaceSchemaLocation="../../xsd/sl-object.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>Media TV (by Ana) 1.1 - 3 x 1.6m</title>
     <creator>
         <name>Anna</name>
@@ -13,4 +13,4 @@
         <bridge/>
         <information/>
     </function>
-</sl-object>
+</sl-element>
