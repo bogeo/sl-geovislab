@@ -1,8 +1,8 @@
 // This script controls the display of the temperature resp. humidity
 // values of the real GeoVisLab as reported by the "weather service". 
 
-string JSON_PROPERTY = "temperature";
-//string JSON_PROPERTY = "humidity";
+//string JSON_PROPERTY = "temperature";
+string JSON_PROPERTY = "humidity";
 float BAR_LENGTH_MAX = 0.625;
 float BAR_POS_Z = 26.917; 
 vector FLOAT_TEXT_COLOR = <1.0, 1.0, 0.0>;
@@ -17,7 +17,7 @@ integer showFloatText = FALSE;
 
 // Position [m]:
 // X: 74.891
-// Y: 97.015
+// Y: 96.608
 // Z: 26.917
 // Size [m]:
 // X: 0.010
@@ -72,10 +72,15 @@ displayResult(float val)
     }
     
     reportValueInChat(llRound(val));
-    sizeBar(percentage);
-    // Note: sizeBar(1.0) would reset the bar geometry to 
-    // its initial values here.
-    //sizeBar(1.0);  
+    integer reset = TRUE; // for development purposes only
+    if (reset == FALSE) {
+        // Note: sizeBar(1.0) would reset the bar geometry to 
+        // its initial values here.
+        sizeBar(1.0);
+    }
+    else {
+        sizeBar(percentage);
+    }
     colorBar(percentage);
 }
 
@@ -113,11 +118,14 @@ sizeBar(float percentage)
         size.y, 
         percentage * BAR_LENGTH_MAX
     >);
+    llSay(0, "pre: " + (string) pos);    
     llSetPos(<
         pos.x,
         pos.y,
         BAR_POS_Z - 0.5 * (1.0 - percentage) * BAR_LENGTH_MAX 
     >);
+    // Note that llSetPos will not work, if the prim is a child element 
+    // inside a group...
 }
 
 colorBar(float percentage) {
