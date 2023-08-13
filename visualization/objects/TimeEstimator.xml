@@ -1,0 +1,25 @@
+<sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Time estimator</title>
+    <description>
+        Tool to estimate time efforts (e.g., as known from agile software engineering process models).  
+    </description>
+    <creator>
+        <name>Jeno Yūrej</name>
+        <sl-id>BennoSchmidt</sl-id>
+    </creator>
+    <commands>
+        <command>/50 s</command>
+    </commands>
+    <primitives>
+        <sl-prim>Box</sl-prim>
+    </primitives>
+    <content>
+        <sl-script>/scripts/TimeEstimator.lsl</sl-script>
+    </content>
+    <function>
+        <collaboration/>
+        <decision/>
+        <familiarity/>
+        <training/>
+    </function>
+</sl-element>
