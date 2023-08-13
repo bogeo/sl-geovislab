@@ -1,0 +1,14 @@
+<sl-element category="general" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Individual settings</title>
+    <commands>
+        <command>Text chat - Natural voice - Voice morphing</command>
+        <command>Rendering quality</command>
+        <command>Avatar look</command>
+        <command>Anonymous appearance</command>
+        <command>Direct manipulation - Command line interaction</command>
+    </commands>
+    <function>
+        <collaboration/>
+        <freedom/>
+     </function>
+</sl-element>

@@ -1,4 +1,5 @@
 // Script to realize time estimation polls
+// (as known from agile software development projects)
 
 // Constants:
 integer CHANNEL = 51; 

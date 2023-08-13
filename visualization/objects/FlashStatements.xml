@@ -13,7 +13,7 @@
         <command>/50 list</command>
     </commands>
     <primitives>
-        <sl-prim>Box</sl-prim>
+        <sl-prim>Sphere</sl-prim>
     </primitives>
     <content>
         <sl-script>/scripts/FlashStatements.lsl</sl-script>

@@ -1,9 +1,10 @@
 // Script to realize a flash statement round
+// (as known from Scrum stand-up meetings)
 
 // Constants:
 integer CHANNEL = 50; 
 vector FLOAT_TEXT_COLOR = <0.2, 1.0, 0.2>;
-float FLASH_TALK_TIME = 120.0; // Time given in secs
+float FLASH_TALK_TIME = 60.0; // Time given in secs
 
 // Local Variables:
 integer phase = 0; // 0 = inactive, 1 = registering phase, 2 = reporting phase
@@ -145,7 +146,7 @@ default
                     text += llGetDisplayName(participant);
                     updateFloatText(text);
                     llSleep(FLASH_TALK_TIME - 10.0);
-                    updateFloatText("Noch 10 Sekunden bis zum Wechsel...");
+                    updateFloatText("Noch 10 Sekunden Redezeit...");
                     llSleep(10.0);
                 }
                 updateFloatText("Prima, wir sind durch!");
@@ -158,7 +159,7 @@ default
         }
         
         if (message == "help" || message == "?") {
-            llSay(0, "Available commands: new begin list");
+            llSay(0, "Available commands: new begin list help");
         }
     }
 }

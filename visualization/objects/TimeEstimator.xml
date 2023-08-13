@@ -1,7 +1,7 @@
 <sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>Time estimator</title>
     <description>
-        Tool to estimate time efforts (e.g., as known from agile software engineering process models).  
+        Tool to estimate time efforts (e.g., as known from agile software development projects).  
     </description>
     <creator>
         <name>Jeno Yūrej</name>
