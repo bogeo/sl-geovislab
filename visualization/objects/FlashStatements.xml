@@ -1,0 +1,29 @@
+<sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Flash statements</title>
+    <description>
+        Tool to organize flash statement rounds (e.g., as known from Scrum stand-up meetings).  
+    </description>
+    <creator>
+        <name>Jeno Yūrej</name>
+        <sl-id>BennoSchmidt</sl-id>
+    </creator>
+    <commands>
+        <command>/50 new</command>
+        <command>/50 begin</command>     
+        <command>/50 list</command>
+    </commands>
+    <primitives>
+        <sl-prim>Box</sl-prim>
+    </primitives>
+    <content>
+        <sl-script>/scripts/FlashStatements.lsl</sl-script>
+    </content>
+    <function>
+        <collaboration/>
+        <decision/>
+        <familiarity/>
+        <listen/>
+        <talk/>
+        <training/>
+    </function>
+</sl-element>
