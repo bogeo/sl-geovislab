@@ -1,5 +1,6 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <title>Time estimator</title>
+    <title>Time estimator tool</title>
     <description>
         Tool to estimate time efforts (e.g., as known from agile software development projects).  
     </description>
@@ -16,6 +17,7 @@
     <content>
         <sl-script>/scripts/TimeEstimator.lsl</sl-script>
     </content>
+    <room>5</room>
     <function>
         <collaboration/>
         <decision/>

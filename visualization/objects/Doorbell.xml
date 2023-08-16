@@ -1,5 +1,6 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <title>door bell</title>
+    <title>Door bell</title>
     <creator>
         <name>MEGHAN</name>
         <sl-id>myggen</sl-id>
@@ -9,6 +10,7 @@
         <slm-seller>myggen</slm-seller>
         <slm-price>0</slm-price>
     </purchase>
+    <room>outdoor</room>
     <function>
         <information/>
         <request/>

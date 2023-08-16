@@ -1,0 +1,129 @@
+sl-element::before {
+  content: "SL-element (Category: \"" attr(category) "\"):\A";
+  font-size: 12pt;
+  text-align: left;
+  white-space: pre;    
+}
+
+title::before {
+  content: "Title: "; 
+  font-weight:normal;
+}
+
+title {
+  font-weight: bold;
+}
+
+title::after {
+  content: "\A";
+  white-space: pre;    
+}
+
+description::before {
+  content: "Description: "; 
+  font-weight:normal;
+}
+
+description::after {
+  content: "\A";
+  white-space: pre;    
+}
+
+creator, purchase, collection, commands, primitives, content, comment {
+  display: none;
+}
+
+room::before {
+  content: "Room: "; 
+  font-weight:normal;
+}
+
+room {
+  font-weight: bold;
+}
+
+room::after {
+  content: "\A\A";
+  white-space: pre;    
+}
+
+function::before {
+  content: "Functions:\A";
+  text-decoration: underline;
+  white-space: pre;    
+}
+
+function bridge::before {
+  content: "\2022  <bridge>: provide a link between reality and virtuality to the user behind the avatar\A";
+  white-space: pre;    
+}
+
+function collaboration::before {
+  content: "\2022  <collaboration>: support an avatar in collaborating with other avatars\A";
+  white-space: pre;    
+}
+
+function coziness::before {
+  content: "\2022  <coziness>: create a pleasant working atmosphere for the user behind the avatar\A";
+  white-space: pre;    
+}
+
+function decision::before {
+  content: "\2022  <decision>: support the avatars in collaborative decision-making processes\A";
+  white-space: pre;    
+}
+
+function familiarity::before {
+  content: "\2022  <familiarity>: give the user behind the avatar the feeling of a familiar working environment and enable easy operation\A";
+  white-space: pre;    
+}
+
+function freedom::before {
+  content: "\2022  <freedom>: give the user behind the avatar the feeling of being able to decide freely about their actions\A";
+  white-space: pre;    
+}
+
+function information::before {
+    content: "\2022  <information>: give information to an avatar\A";
+    white-space: pre;    
+}
+
+function listen::before {
+  content: "\2022  <listen>: enable the user behind the avatar to conveniently consume information\A";
+  white-space: pre;    
+}
+
+function navigate::before {
+  content: "\2022  <navigate>: support the user in controlling the avatar in the virtual space\A";
+  white-space: pre;    
+}
+
+function orientation::before {
+  content: "\2022  <orientation>: help the avatar to find his way around and to orient himself in the virtual space\A";
+  white-space: pre;    
+}
+
+function relax::before {
+    content: "\2022  <relax>: allow the user behind the avatar to relax\A";
+    white-space: pre;    
+}
+
+function request::before {
+  content: "\2022  <request>: request an (avatar or system) reaction\A";
+  white-space: pre;    
+}
+
+function survey::before {
+  content: "\2022  <survey>: provide the avatar with geodetic work tools for the virtual space\A";
+  white-space: pre;    
+}
+
+function talk::before {
+  content: "\2022  <talk>: support the avatar to communicate information to others\A";
+  white-space: pre;    
+}
+
+function training::before {
+  content: "\2022  <training>: train the behavior in certain situations with the user behind the avatar\A";
+  white-space: pre;    
+}

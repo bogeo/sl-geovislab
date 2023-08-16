@@ -1,9 +1,11 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="general" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>Multiple viewpoints</title>
     <commands>
         <command>Ego view</command>
         <command>Room view</command>
     </commands>
+    <room>all</room>
     <function>
         <freedom/>
         <orientation/>

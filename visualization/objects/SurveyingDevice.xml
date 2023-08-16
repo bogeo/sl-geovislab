@@ -1,6 +1,7 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <title>VRPos 1.0 Survey Tool</title>
-    <description>Positioning System for VR environments and field computer</description>
+    <title>Positioning system and field computer</title>
+    <description>VRPos 1.0 Survey Tool: Positioning System for VR environments and field computer</description>
     <creator>
         <name>Jeno Yūrej</name>
         <sl-id>BennoSchmidt</sl-id>

@@ -1,3 +1,4 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>Poster</title>
     <creator>
@@ -10,6 +11,7 @@
     <content>
         <sl-script>/scripts/ObjectInfo.lsl</sl-script>
     </content>
+    <room>various</room>
     <function>
         <bridge/>
         <information/>

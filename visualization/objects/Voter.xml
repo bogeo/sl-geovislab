@@ -1,5 +1,6 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <title>Simple Voter</title>
+    <title>Voting tool</title>
     <description>
         Simple voting system, consisting of a green, yellow, orange and red voter object. 
         Note that this XML description describes only one of those four voring instances. 
@@ -23,6 +24,7 @@
     <content>
         <sl-script>/scripts/Voter.lsl</sl-script>
     </content>
+    <room>5</room>
     <function>
         <collaboration/>
         <decision/>

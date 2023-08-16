@@ -1,5 +1,6 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <title>StepUp Free Bistro Set</title>
+    <title>Bistro Set</title>
     <creator>
         <name>Ven</name>
         <sl-id>venkellie</sl-id>

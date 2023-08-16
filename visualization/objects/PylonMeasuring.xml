@@ -1,5 +1,6 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <title>measuring tape 1.0</title>
+    <title>Pylon measuring tool</title>
     <creator>
         <name>4t Resident</name>
         <sl-id>4t.mildor</sl-id>
@@ -9,7 +10,7 @@
         <item>end-position</item>
     </collection>
     <purchase>
-        <slm-description>measuring tape</slm-description>
+        <slm-description>measuring tape 1.0</slm-description>
         <slm-seller>4t Mildor</slm-seller>
         <slm-price>99</slm-price>
     </purchase>

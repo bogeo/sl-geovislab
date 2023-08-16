@@ -1,5 +1,6 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <title>Group invitation</title>
+    <title>Group invitation ball</title>
     <creator>
         <name>Jeno Yūrej</name>
         <sl-id>BennoSchmidt</sl-id>
@@ -10,6 +11,7 @@
     <content>
         <sl-script>/scripts/GroupInvitation.lsl</sl-script>
     </content>
+    <room>5</room>
     <function>
         <collaboration/>
         <information/>

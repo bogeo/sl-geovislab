@@ -1,8 +1,10 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="general" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <title>House</title>
     <description>
         House consisting of five rooms. 
     </description>
+    <room>outdoor</room>
     <function>
         <orientation/>
      </function>

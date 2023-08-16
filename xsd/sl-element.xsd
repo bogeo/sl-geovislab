@@ -50,7 +50,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="room" type="Room" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="room" type="Room" minOccurs="1" maxOccurs="1"/>
         <xs:element name="function" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
@@ -74,16 +74,15 @@
         </xs:element>
         <xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"/>
       </xs:sequence>
-      <xs:attribute name="category" type="xs:string" use="required">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="general"/>
-            <xs:enumeration value="object"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:attribute>
+      <xs:attribute name="category" type="Category" use="required"/>
     </xs:complexType>
   </xs:element>
+  <xs:simpleType name="Category">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="general"/>
+      <xs:enumeration value="object"/>
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="Room">
     <xs:restriction base="xs:string">
       <xs:enumeration value="outdoor"/>
@@ -92,6 +91,9 @@
       <xs:enumeration value="3"/>
       <xs:enumeration value="4"/>
       <xs:enumeration value="5"/>
+      <xs:enumeration value="various"/>
+      <xs:enumeration value="all"/>
+      <xs:enumeration value="irrelevant"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>

@@ -1,14 +1,16 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <title>Media TV (by Ana) 1.1 - 3 x 1.6m</title>
+    <title>TV and Web browser</title>
     <creator>
         <name>Anna</name>
         <sl-id>annalips</sl-id>
     </creator>
     <purchase>
-        <slm-description>Media TV</slm-description>
+        <slm-description>Media TV (by Ana) 1.1 - 3 x 1.6m</slm-description>
         <slm-seller>AnnaLips</slm-seller>
         <slm-price>0</slm-price>
     </purchase>
+    <room>1</room>
     <function>
         <bridge/>
         <information/>

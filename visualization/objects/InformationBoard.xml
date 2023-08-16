@@ -1,5 +1,6 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
-    <title>Information Board</title>
+    <title>Information board</title>
     <creator>
         <name>Jeno Yūrej</name>
         <sl-id>BennoSchmidt</sl-id>
@@ -10,6 +11,7 @@
     <content>
         <sl-script>/scripts/ObjectInfo.lsl</sl-script>
     </content>
+    <room>various</room>
     <function>
         <information/>
     </function>

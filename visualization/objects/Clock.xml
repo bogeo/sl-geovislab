@@ -1,5 +1,6 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
 <sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <title>Bright Analog Clock</title>
+    <title>Clock</title>
     <creator>
         <name>Red Mills</name>
         <sl-id>red.mills</sl-id>
@@ -12,6 +13,7 @@
     <content>
         <sl-script>scripts/external/Bright Analog Clock script #001.lsl</sl-script>
     </content>
+    <room>5</room>
     <function>
         <bridge/>
         <familiarity/>
