@@ -1,99 +1,100 @@
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="sl-element">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="title" type="xs:string"/>
-        <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="title" type="xs:string" />
+        <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1" />
         <xs:element name="creator" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="name" type="xs:string"/>
-              <xs:element name="sl-id" type="xs:string"/>
+              <xs:element name="name" type="xs:string" />
+              <xs:element name="sl-id" type="xs:string" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="commands" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="command" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="command" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="collection" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="item" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="item" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="purchase" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="slm-description" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="slm-seller" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="slm-price" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="slm-description" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="slm-seller" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="slm-price" type="xs:string" minOccurs="0" maxOccurs="1" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="primitives" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="sl-prim" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="sl-prim" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="content" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="sl-script" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-              <xs:element name="sl-notecard" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="sl-script" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element name="sl-notecard" type="xs:string" minOccurs="0" maxOccurs="1" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="room" type="Room" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="room" type="Room" minOccurs="1" maxOccurs="1" />
         <xs:element name="function" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="bridge" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="collaboration" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="coziness" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="decision" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="familiarity" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="freedom" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="information" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="listen" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="navigate" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="orientation" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="relax" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="request" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="survey" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="talk" type="xs:string" minOccurs="0" maxOccurs="1"/>
-              <xs:element name="training" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="bridge" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="collaboration" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="coziness" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="decision" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="familiarity" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="freedom" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="information" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="listen" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="navigate" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="orientation" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="relax" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="request" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="survey" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="talk" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xs:element name="training" type="xs:string" minOccurs="0" maxOccurs="1" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1" />
       </xs:sequence>
-      <xs:attribute name="category" type="Category" use="required"/>
+      <xs:attribute name="category" type="Category" use="required" />
     </xs:complexType>
   </xs:element>
   <xs:simpleType name="Category">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="general"/>
-      <xs:enumeration value="object"/>
+      <xs:enumeration value="general" />
+      <xs:enumeration value="object" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="Room">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="outdoor"/>
-      <xs:enumeration value="1"/>
-      <xs:enumeration value="2"/>
-      <xs:enumeration value="3"/>
-      <xs:enumeration value="4"/>
-      <xs:enumeration value="5"/>
-      <xs:enumeration value="various"/>
-      <xs:enumeration value="all"/>
-      <xs:enumeration value="irrelevant"/>
+      <xs:enumeration value="outdoor" />
+      <xs:enumeration value="1" />
+      <xs:enumeration value="2" />
+      <xs:enumeration value="3" />
+      <xs:enumeration value="4" />
+      <xs:enumeration value="5" />
+      <xs:enumeration value="various" />
+      <xs:enumeration value="all" />
+      <xs:enumeration value="irrelevant" />
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>
