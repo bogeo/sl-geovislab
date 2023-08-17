@@ -15,8 +15,8 @@
   </solution-DE>
   <confidence>Idea</confidence>
   <formalization language="(none)">
-    <participant identifier="shelf" type="VisualizationObject"/>
-    <participant identifier="packaging" type="VisualizationObject"/>
+    <participant identifier="shelf" type="VisObject"/>
+    <participant identifier="packaging" type="VisObject"/>
     <participant identifier="content" type="Notecard"/>
   </formalization>
   <related-patterns>

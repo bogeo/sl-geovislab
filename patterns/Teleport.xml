@@ -1,0 +1,19 @@
+<?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
+<pattern patternID="15" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <name>Teleport</name>
+  <name-DE>Teleporter</name-DE>
+  <problem>TODO</problem>
+  <solution>TODO</solution>
+  <confidence>Idea</confidence>
+  <literature>
+    <bibliomixed id="1">
+        Threesixty Reality Ltd., eds. (2023): Interaction design patterns : A collection of interaction patterns for virtual and 
+        augmented reality. http://s824284416.websitehome.co.uk/interaction-design-patterns-library/virtual-reality/
+    </bibliomixed>
+  </literature>
+  <formalization language="(none)">
+    <participant identifier="avatar" type="Avatar"/>
+    <participant identifier="target" type="GeoPosition"/>
+    <participant identifier="teleporterObject" type="UIElement"/>
+  </formalization>
+</pattern>

@@ -16,8 +16,8 @@
   </solution>
   <confidence>Idea</confidence>
   <formalization language="(none)">
-    <participant identifier="seat" type="VisualizationObject"/>
-    <participant identifier="avaturBehavior" type="AvatorAnimation"/>
+    <participant identifier="seat" type="VisObject"/>
+    <participant identifier="avatarBehavior" type="AvatorAnimation"/>
     <participant identifier="control" type="UIElement"/>
   </formalization>
 </pattern>

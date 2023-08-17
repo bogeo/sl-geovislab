@@ -18,7 +18,7 @@
     <participant identifier="inside" type="GeoRegion"/>
     <participant identifier="outside" type="GeoRegion"/>
     <participant identifier="door" type="Widget"/>
-    <participant identifier="window" type="VisualizationObject"/>
+    <participant identifier="window" type="VisObject"/>
     <participant identifier="avatar" type="Avatar"/>
   </formalization>
 </pattern>

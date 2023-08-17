@@ -12,8 +12,8 @@
   </solution>
   <confidence>Idea</confidence>
   <formalization language="(none)">
-    <participant identifier="item" type="VisualizationObject"/>
-    <participant identifier="position" type="GeoPosition"/>
+    <participant identifier="item" type="VisObject"/>
+    <participant identifier="position" type="Position"/>
     <participant identifier="space" type="GeoSpace"/>
   </formalization>
   <related-patterns>

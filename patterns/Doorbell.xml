@@ -12,9 +12,9 @@
   </solution>
   <confidence>Idea</confidence>
   <formalization language="(none)">
-    <participant identifier="bell" type="InteractiveVisualzationObject"/>
+    <participant identifier="bell" type="InteractiveVisObject"/>
     <participant identifier="ringtone" type="Sound"/>
-    <participant identifier="soundPlayer" type="Programme"/>
-    <participant identifier="message" type="Text"/>
+    <participant identifier="soundPlayer" type="ProgramScript"/>
+    <participant identifier="message" type="String"/>
   </formalization>
 </pattern>

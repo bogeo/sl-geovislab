@@ -12,7 +12,7 @@
   <confidence>Idea</confidence>
   <formalization language="(none)">
     <participant identifier="settings" type="KeyValuePairList"/>
-    <participant identifier="talkType" type="ConfigurationElement"/>
-    <participant identifier="navigationType" type="ConfigurationElement"/>
+    <participant identifier="talkType" type="ConfigElement"/>
+    <participant identifier="navigationType" type="ConfigElement"/>
   </formalization>
 </pattern>

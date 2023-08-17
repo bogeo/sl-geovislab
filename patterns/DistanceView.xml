@@ -15,6 +15,12 @@
     der Avatare dargestellt sind; siehe dazu separate Muster-Beschreibung.    
   </solution-DE>
   <confidence>Idea</confidence>
+  <literature>
+    <bibliomixed id="1">
+        Pruett, C. (2017): Lessons from the Frontlines : Modern VR Design Patterns.
+        https://developer.oculus.com/blog/lessons-from-the-frontlines-modern-vr-design-patterns
+    </bibliomixed>
+  </literature>
   <formalization language="(none)">
     <participant identifier="viewpoint" type="Camera"/>
     <participant identifier="egoView" type="Camera"/>

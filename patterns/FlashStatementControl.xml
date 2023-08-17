@@ -13,7 +13,7 @@
   <confidence>Idea</confidence>
   <formalization language="(none)">
     <participant identifier="participant" type="Avatar"/>
-    <participant identifier="scheduler" type="Programme"/>
-    <participant identifier="visualization" type="Programme"/>
+    <participant identifier="scheduler" type="ProgramScript"/>
+    <participant identifier="visualization" type="ProgramScript"/>
   </formalization>
 </pattern>
