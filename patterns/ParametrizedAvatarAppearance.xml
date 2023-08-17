@@ -1,7 +1,7 @@
 <?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
 <pattern patternID="3" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <name>Parametrized Avatar Appearance</name>
-    <name-DE>Parametrisiertes Avatar-Gestalt</name-DE>
+    <name-DE>Parametrisierte Avatar-Gestalt</name-DE>
     <problem>TODO engl. description</problem>
     <problem-DE>
         Die Zuordnung eines Avatars zu vorherigen Beiträgen und Aktionen im virtuellen Lehrraum ist 

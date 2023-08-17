@@ -17,6 +17,6 @@
         <participant identifier="space" type="GeoSpace"/>
     </formalization>
     <related-patterns>
-        <pattern-link type="is-related-to" patternID="8" collection="A" label="Shelf"/>
+        <pattern-link type="is-related-to" patternID="8" collection="A" label="Shelf" ref="./Shelf.xml"/>
     </related-patterns>
 </pattern>

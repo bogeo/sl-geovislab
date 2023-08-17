@@ -105,14 +105,11 @@
                 <xsd:complexType>
                   <xsd:simpleContent>
                     <xsd:extension base="xsd:string">
-                      <xsd:attribute name="type" type="relation"
-                        use="required" />
-                      <xsd:attribute name="patternID" type="xsd:integer"
-                        use="required" />
-                      <xsd:attribute name="collection" type="xsd:string"
-                        use="required" />
-                      <xsd:attribute name="label" type="xsd:string"
-                        use="required" />
+                      <xsd:attribute name="type" type="relation" use="required"/>
+                      <xsd:attribute name="patternID" type="xsd:integer" use="required"/>
+                      <xsd:attribute name="collection" type="xsd:string" use="required"/>
+                      <xsd:attribute name="label" type="xsd:string" use="optional"/>
+                      <xsd:attribute name="ref" type="xsd:string" use="optional"/>
                     </xsd:extension>
                   </xsd:simpleContent>
                 </xsd:complexType>

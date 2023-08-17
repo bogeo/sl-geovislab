@@ -18,6 +18,6 @@
         <participant identifier="content" type="Notecard"/>
     </formalization>
     <related-patterns>
-        <pattern-link type="is-related-to" patternID="1" collection="A" label="Familiar Space Replication"/>
+        <pattern-link type="is-related-to" patternID="1" collection="A" label="Familiar Space Replication" ref="./FamiliarSpaceReplication.xml" />
     </related-patterns>
 </pattern>
