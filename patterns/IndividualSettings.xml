@@ -1,0 +1,18 @@
+<?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
+<pattern patternID="10" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <name>Individuelle Settings</name>
+    <name-DE>Individuelle Einstellungen</name-DE>
+    <problem>TODO engl. description</problem>
+    <problem-DE>
+        Studierende haben unterschiedliche Skills in der Bedienung ihres Avatars.      
+    </problem-DE>
+    <solution>
+        TODO
+    </solution>
+    <confidence>Idea</confidence>
+    <formalization language="(none)">
+        <participant identifier="settings" type="KeyValuePairList"/>
+        <participant identifier="talkType" type="ConfigurationElement"/>
+        <participant identifier="navigationType" type="ConfigurationElement"/>
+    </formalization>
+</pattern>

@@ -1,0 +1,20 @@
+<?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
+<pattern patternID="4" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <name>Visible Speaker</name>
+    <name-DE>Sichtbarer Sprecher</name-DE>
+    <problem>TODO engl. description</problem>
+    <problem-DE>
+        Die Zuordnung eines Avatars zu vorherigen Beiträgen und Aktionen im virtuellen Lehrraum ist 
+        nötig. Dies macht auch erforderlich, dass eine Wortmeldung (z. B. eine natürlichsprachliches
+        Sprechen) dem jeweils aktiven Avatar zuordenbar sein muss.
+   </problem-DE>
+    <solution>
+        TODO
+    </solution>
+    <confidence>Idea</confidence>
+    <formalization language="(none)">
+        <participant identifier="avatar" type="Avatar"/>
+        <participant identifier="isTalking" type="Boolean"/>
+        <participant identifier="visualization" type="Animation"/>
+    </formalization>
+</pattern>

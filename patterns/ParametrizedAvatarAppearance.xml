@@ -1,0 +1,20 @@
+<?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
+<pattern patternID="3" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <name>Parametrized Avatar Appearance</name>
+    <name-DE>Parametrisiertes Avatar-Gestalt</name-DE>
+    <problem>TODO engl. description</problem>
+    <problem-DE>
+        Die Zuordnung eines Avatars zu vorherigen Beiträgen und Aktionen im virtuellen Lehrraum ist 
+        nötig. Dies lässt sich durch eine individuelle Gestaltung der Avatare lösen.     
+   </problem-DE>
+    <solution>
+        TODO
+    </solution>
+    <confidence>Idea</confidence>
+    <formalization language="(none)">
+        <participant identifier="avatar" type="Avatar"/>
+        <participant identifier="parameter" type="KeyValuePairList"/>
+        <participant identifier="color" type="KeyValuePair"/>
+        <participant identifier="geometricParameter" type="KeyValuePair"/>
+    </formalization>
+</pattern>

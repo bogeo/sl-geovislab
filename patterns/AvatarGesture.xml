@@ -1,0 +1,21 @@
+<?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
+<pattern patternID="5" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <name>Avatar Gesture</name>
+    <name-DE>Avatar-Geste</name-DE>
+    <problem>TODO engl. description</problem>
+    <problem-DE>
+        Der Avatar soll schnell eine Reaktion zeigen, um eine flüssige Kommunikation mit anderen 
+        Avataren zu ermöglichen. Eintippen aufwändiger Texte würde lange dauern (und zudem stören
+        oft Schreibfehler).    
+    </problem-DE>
+    <solution>
+        TODO
+    </solution>
+    <confidence>Idea</confidence>
+    <formalization language="(none)">
+        <participant identifier="avatar" type="Avatar"/>
+        <participant identifier="control" type="UIElement"/>
+        <participant identifier="gesturePool" type="Gesture"/>
+        <participant identifier="gestureImpl" type="Animation"/>
+    </formalization>
+</pattern>

@@ -1,0 +1,25 @@
+<?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
+<pattern patternID="7" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <name>Speed Traffic Lights</name>
+    <name-DE>Geschwindigkeitsampel</name-DE>
+    <problem>TODO engl. description</problem>
+    <problem-DE>
+        Der/die Dozent:in redet zu schnell. Die Studierenden möchten gerne eine Rückmeldung geben,
+        ohne den/die Dozent:in im Redefluss allzu sehr zu stören und ohne ihre Identität (bzw. die   
+        ihres Avatars) preiszugeben.      
+    </problem-DE>
+    <solution>
+        TODO
+    </solution>
+    <confidence>Idea</confidence>
+    <formalization language="LSL">
+        <participant identifier="reporter" type="Avatar"/>
+        <participant identifier="report" type="SpeedValue"/>
+        <participant identifier="controlLogic" type="Programm"/>
+        <participant identifier="greenLight" type="ColoredCircle"/>
+        <participant identifier="yellowLight" type="ColoredCircle"/>
+        <participant identifier="redLight" type="ColoredCircle"/>
+        <participant identifier="presenter" type="Avatar"/>
+        <participant identifier="reset" type="Command"/>
+    </formalization>
+</pattern>
