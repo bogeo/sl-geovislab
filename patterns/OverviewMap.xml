@@ -1,0 +1,25 @@
+<?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
+<pattern patternID="14" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <name>Overview Map</name>
+  <name-DE>Übersichtskarte</name-DE>
+  <problem>TODO engl. description</problem>
+  <problem-DE>
+    Durch die Augen des Avatars sind die sich in einem virtuellen Raum und der Umgebung aufhaltenden 
+    Avatare schwer in ihrer Ganzheit zu erfassen.    
+  </problem-DE>
+  <solution>TODO engl. description</solution>
+  <solution-DE>
+    Es wird eine Übersichtskarte ("overview map") bereitgestellt, in welcher die Aufenthaltspositionen 
+    anderer Avatare dargestellt sind.
+  </solution-DE>
+  <confidence>Idea</confidence>
+  <formalization language="(none)">
+    <participant identifier="viewpoint" type="Camera"/>
+    <participant identifier="egoView" type="Camera"/>
+    <participant identifier="roomView" type="Camera"/>
+    <participant identifier="overviewMap" type="UIElement"/>
+  </formalization>
+  <related-patterns>
+    <pattern-link type="is-related-to" patternID="6" collection="B" label="Distance View" ref="./Distance View.xml" />
+  </related-patterns>
+</pattern>

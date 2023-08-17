@@ -1,20 +1,24 @@
 <?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
 <pattern patternID="12" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <name>Environmental Space</name>
-    <name-DE>Umgebungsraum</name-DE>
-    <problem>TODO engl. description</problem>
-    <problem-DE>
-        Ein/e Raumnutzer:in fühlt sich (psychologisch) eingeengt im Raum ("Platzangst").   
-    </problem-DE>
-    <solution>
-        TODO
-    </solution>
-    <confidence>Idea</confidence>
-    <formalization language="(none)">
-        <participant identifier="inside" type="GeoRegion"/>
-        <participant identifier="outside" type="GeoRegion"/>
-        <participant identifier="door" type="Widget"/>
-        <participant identifier="window" type="VisualizationObject"/>
-        <participant identifier="avatar" type="Avatar"/>
-    </formalization>
+  <name>Environmental Space</name>
+  <name-DE>Umgebungsraum</name-DE>
+  <problem>TODO engl. description</problem>
+  <problem-DE>
+    Ein/e Raumnutzer:in fühlt sich (psychologisch) eingeengt im Raum ("Platzangst").   
+  </problem-DE>
+  <solution>TODO engl. description</solution>
+  <solution-DE>
+    Um den virtuellen Lehrraum herum werden weitere, sich nahtlos anschließende Räume bereitgestellt, 
+    in die sich ein Avatar bei Bedarf zurückziehen oder die er einsehen kann (z. B. mittels eines 
+    Blicks aus dem Fenster). Belebend wirken dezente Ereignisse in der Außenwelt, z. B. dezente 
+    Umgebungsgeräusche (Vögel, fernes Hupen u. ä.), andere Avatare als Passanten oder Bots etc.     
+  </solution-DE>
+  <confidence>Idea</confidence>
+  <formalization language="(none)">
+    <participant identifier="inside" type="GeoRegion"/>
+    <participant identifier="outside" type="GeoRegion"/>
+    <participant identifier="door" type="Widget"/>
+    <participant identifier="window" type="VisualizationObject"/>
+    <participant identifier="avatar" type="Avatar"/>
+  </formalization>
 </pattern>

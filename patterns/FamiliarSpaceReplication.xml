@@ -1,22 +1,22 @@
 <?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
 <pattern patternID="1" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <name>Familiar Space Replication</name>
-    <name-DE>Vertraute Raumnachbildung</name-DE>
-    <problem>TODO engl. description</problem>
-    <problem-DE>
-        Ein/e Raumnutzer:in sucht ein bestimmtes Objekt (oder eine bestimmte Information) im Raum,
-        weiß jedoch nicht, wo diese zu finden ist.   
-    </problem-DE>
-    <solution>
-        TODO
-    </solution>
-    <confidence>Idea</confidence>
-    <formalization language="(none)">
-        <participant identifier="item" type="VisualizationObject"/>
-        <participant identifier="position" type="GeoPosition"/>
-        <participant identifier="space" type="GeoSpace"/>
-    </formalization>
-    <related-patterns>
-        <pattern-link type="is-related-to" patternID="8" collection="A" label="Shelf" ref="./Shelf.xml"/>
-    </related-patterns>
+  <name>Familiar Space Replication</name>
+  <name-DE>Vertraute Raumnachbildung</name-DE>
+  <problem>TODO engl. description</problem>
+  <problem-DE>
+    Ein/e Raumnutzer:in sucht ein bestimmtes Objekt (oder eine bestimmte Information) im Raum,
+    weiß jedoch nicht, wo diese zu finden ist.   
+  </problem-DE>
+  <solution>
+    TODO
+  </solution>
+  <confidence>Idea</confidence>
+  <formalization language="(none)">
+    <participant identifier="item" type="VisualizationObject"/>
+    <participant identifier="position" type="GeoPosition"/>
+    <participant identifier="space" type="GeoSpace"/>
+  </formalization>
+  <related-patterns>
+    <pattern-link type="is-related-to" patternID="8" collection="A" label="Shelf" ref="./Shelf.xml"/>
+  </related-patterns>
 </pattern>

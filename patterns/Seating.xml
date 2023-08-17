@@ -1,22 +1,23 @@
 <?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
 <pattern patternID="2" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <name>Seating</name>
-    <name-DE>Sitzgelegenheit</name-DE>
-    <problem>TODO engl. description</problem>
-    <problem-DE>
-        Voreinstellungsgemäß werden Avatare zumeist in stehender Position dargestellt. Mitunter wirkt
-        dies unnatürlich (z. B. sitzen die Teilnehmer:innen einer längeren realen Besprechung oder 
-        Lehrveranstaltung üblicherweise). Daneben ist es Nutzer:innen oft unangenehm, wenn der zugehörige      
-        Avatar unnatürlich und mitunter störend (z. B. anderen die Sicht versprerend) im virtuellen Raum
-        "dumm" herumsteht. 
-    </problem-DE>
-    <solution>
-        TODO
-    </solution>
-    <confidence>Idea</confidence>
-    <formalization language="(none)">
-        <participant identifier="seat" type="VisualizationObject"/>
-        <participant identifier="avaturBehavior" type="AvatorAnimation"/>
-        <participant identifier="control" type="UIElement"/>
-    </formalization>
+  <name>Seating</name>
+  <name-DE>Sitzgelegenheit</name-DE>
+  <problem>TODO engl. description</problem>
+  <problem-DE>
+    Voreinstellungsgemäß werden Avatare zumeist in stehender Position dargestellt. Mitunter wirkt
+    dies unnatürlich (z. B. sitzen die Teilnehmer:innen einer längeren realen Besprechung oder 
+    Lehrveranstaltung üblicherweise). Daneben ist es Nutzer:innen oft unangenehm, wenn der zugehörige      
+    Avatar unnatürlich und mitunter störend (z. B. anderen die Sicht versprerend) im virtuellen Raum
+    "dumm" herumsteht. 
+  </problem-DE>
+  <solution>
+    Den Avataren werden Sitzgelegenheiten, z. B. Stühle, Sitzkissen u. ä. angeboten, auf die sich 
+    ein Avatar durch einen einfach Befehl setzen kann.    
+  </solution>
+  <confidence>Idea</confidence>
+  <formalization language="(none)">
+    <participant identifier="seat" type="VisualizationObject"/>
+    <participant identifier="avaturBehavior" type="AvatorAnimation"/>
+    <participant identifier="control" type="UIElement"/>
+  </formalization>
 </pattern>

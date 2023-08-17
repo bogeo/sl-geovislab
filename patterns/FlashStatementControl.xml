@@ -1,19 +1,19 @@
 <?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
 <pattern patternID="13" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <name>Flash Statement Control</name>
-    <name-DE>Blitzstatement-Steuerung</name-DE>
-    <problem>TODO engl. description</problem>
-    <problem-DE>
-        Mehrere Studierende möchten sichzu einem Thema äußern, ungeordnete Wortbeiträge der Avatare
-        sind jedoch schwer inhaltlich zu erfassen ("Durcheinandergerede").    
-    </problem-DE>
-    <solution>
-        TODO
-    </solution>
-    <confidence>Idea</confidence>
-    <formalization language="(none)">
-        <participant identifier="participant" type="Avatar"/>
-        <participant identifier="scheduler" type="Programme"/>
-        <participant identifier="visualization" type="Programme"/>
-    </formalization>
+  <name>Flash Statement Control</name>
+  <name-DE>Blitzstatement-Steuerung</name-DE>
+  <problem>TODO engl. description</problem>
+  <problem-DE>
+    Mehrere Studierende möchten sichzu einem Thema äußern, ungeordnete Wortbeiträge der Avatare
+    sind jedoch schwer inhaltlich zu erfassen ("Durcheinandergerede").    
+  </problem-DE>
+  <solution>
+    TODO
+  </solution>
+  <confidence>Idea</confidence>
+  <formalization language="(none)">
+    <participant identifier="participant" type="Avatar"/>
+    <participant identifier="scheduler" type="Programme"/>
+    <participant identifier="visualization" type="Programme"/>
+  </formalization>
 </pattern>

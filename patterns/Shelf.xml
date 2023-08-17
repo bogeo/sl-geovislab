@@ -1,23 +1,25 @@
 <?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
 <pattern patternID="8" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <name>Shelf</name>
-    <name-DE>Regal</name-DE>
-    <problem>TODO engl. description</problem>
-    <problem-DE>
-        Ein/e Raumnutzer:in sucht ein bestimmtes Objekt (oder eine bestimmte Information) im Raum,
-        weiß jedoch nicht, wo diese zu finden ist. Insbesondere bei eienr großen Zahl von Gegenständen
-        ist es mitunter schwer, für alles einen geeigneten Platz zu finden.   
-    </problem-DE>
-    <solution>
-        TODO
-    </solution>
-    <confidence>Idea</confidence>
-    <formalization language="(none)">
-        <participant identifier="shelf" type="VisualizationObject"/>
-        <participant identifier="packaging" type="VisualizationObject"/>
-        <participant identifier="content" type="Notecard"/>
-    </formalization>
-    <related-patterns>
-        <pattern-link type="is-related-to" patternID="1" collection="A" label="Familiar Space Replication" ref="./FamiliarSpaceReplication.xml" />
-    </related-patterns>
+  <name>Shelf</name>
+  <name-DE>Regal</name-DE>
+  <problem>TODO engl. description</problem>
+  <problem-DE>
+    Ein/e Raumnutzer:in sucht ein bestimmtes Objekt (oder eine bestimmte Information) im Raum, weiß
+    jedoch nicht, wo diese zu finden ist. Insbesondere bei einer großen Zahl von Gegenständen ist es 
+    mitunter schwer, für alles einen geeigneten Platz zur Ablage zu finden.   
+  </problem-DE>
+  <solution>TODO engl. description</solution>
+  <solution-DE>
+    Es wird ein Regal aufgestellt, in das sich Dinge stellen lassen. Z. B. Anleitungstexte oder 
+    Merkblätter visuell in Buchform o. ä.
+  </solution-DE>
+  <confidence>Idea</confidence>
+  <formalization language="(none)">
+    <participant identifier="shelf" type="VisualizationObject"/>
+    <participant identifier="packaging" type="VisualizationObject"/>
+    <participant identifier="content" type="Notecard"/>
+  </formalization>
+  <related-patterns>
+    <pattern-link type="is-related-to" patternID="1" collection="A" label="Familiar Space Replication" ref="./FamiliarSpaceReplication.xml" />
+  </related-patterns>
 </pattern>

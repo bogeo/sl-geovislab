@@ -1,21 +1,29 @@
 <?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
 <pattern patternID="5" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <name>Avatar Gesture</name>
-    <name-DE>Avatar-Geste</name-DE>
-    <problem>TODO engl. description</problem>
-    <problem-DE>
-        Der Avatar soll schnell eine Reaktion zeigen, um eine flüssige Kommunikation mit anderen 
-        Avataren zu ermöglichen. Eintippen aufwändiger Texte würde lange dauern (und zudem stören
-        oft Schreibfehler).    
-    </problem-DE>
-    <solution>
-        TODO
-    </solution>
-    <confidence>Idea</confidence>
-    <formalization language="(none)">
-        <participant identifier="avatar" type="Avatar"/>
-        <participant identifier="control" type="UIElement"/>
-        <participant identifier="gesturePool" type="Gesture"/>
-        <participant identifier="gestureImpl" type="Animation"/>
-    </formalization>
+  <name>Avatar Gesture</name>
+  <name-DE>Avatar-Gestik</name-DE>
+  <problem>TODO engl. description</problem>
+  <problem-DE>
+    Um eine flüssige Kommunikation mit anderen Avataren zu gewährleisten, soll ein Avatar schnell 
+    Reaktionen zeigen können. Das (fehlerfreie) Eintippen von Text dauert oft zu lange.    
+  </problem-DE>
+  <solution>TODO engl. description</solution>
+  <solution-DE>
+    Der Avatar wird mit der Fähigkeit ausgestattet, Gesten zeigen zu können, z. B. Nicken/Schütteln des
+    Kopfes, Achselzucken, Handzeichen u. ä. Hierzu wird die Avatarobjektgeometrie animiert. Bei Bedarf
+    können Tonausgaben unterstützend hinzugenommen werden wie z. B. um ein Lachen zu unterstützen u. ä.       
+  </solution-DE>
+  <confidence>Idea</confidence>
+  <literature>
+    <bibliomixed id="1">
+        Linden, J. (2018): Using gestures and animations. Second Life Knowledge Base, 
+        https://community.secondlife.com/knowledgebase/english/using-gestures-and-animations-r27/
+    </bibliomixed>
+  </literature>
+  <formalization language="(none)">
+    <participant identifier="avatar" type="Avatar"/>
+    <participant identifier="control" type="UIElement"/>
+    <participant identifier="gesturePool" type="Gesture"/>
+    <participant identifier="gestureImpl" type="Animation"/>
+  </formalization>
 </pattern>

@@ -1,20 +1,20 @@
 <?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
 <pattern patternID="11" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <name>Doorbell</name>
-    <name-DE>Türklingel</name-DE>
-    <problem>TODO engl. description</problem>
-    <problem-DE>
-        Ein Studierender möchte sich bemerkbar machen, jedoch ist er aktuell nicht im Sichtfeld des 
-        Lehrenden. 
-    </problem-DE>
-    <solution>
-        TODO
-    </solution>
-    <confidence>Idea</confidence>
-    <formalization language="(none)">
-        <participant identifier="bell" type="InteractiveVisualzationObject"/>
-        <participant identifier="ringtone" type="Sound"/>
-        <participant identifier="soundPlayer" type="Programme"/>
-        <participant identifier="message" type="Text"/>
-    </formalization>
+  <name>Doorbell</name>
+  <name-DE>Türklingel</name-DE>
+  <problem>TODO engl. description</problem>
+  <problem-DE>
+    Ein Studierender möchte sich bemerkbar machen, jedoch ist er aktuell nicht im Sichtfeld des 
+    Lehrenden. 
+  </problem-DE>
+  <solution>
+    TODO
+  </solution>
+  <confidence>Idea</confidence>
+  <formalization language="(none)">
+    <participant identifier="bell" type="InteractiveVisualzationObject"/>
+    <participant identifier="ringtone" type="Sound"/>
+    <participant identifier="soundPlayer" type="Programme"/>
+    <participant identifier="message" type="Text"/>
+  </formalization>
 </pattern>

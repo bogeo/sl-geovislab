@@ -1,0 +1,27 @@
+<?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
+<pattern patternID="6" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <name>Distance View</name>
+  <name-DE>Distanzansicht</name-DE>
+  <problem>TODO engl. description</problem>
+  <problem-DE>
+    Durch die Augen des Avatars sind der virtuelle Raum und sich darin aufhaltenden Avatare schwer
+    in ihrer Gesamtheit zu erfassen.    
+  </problem-DE>
+  <solution>TODO engl. description</solution>
+  <solution-DE>
+    Neben der Ego-Sicht durch die Augen des Avatars werden weitere Sichten bereitgestellt, z. B. aus 
+    wenigen Metern Entfernung auf die Gesamtgruppe innerhalb eines Raums (Distanzansicht). Ergänzend 
+    kann auch eine Übersichtskarte ("overview map") bereitgestellt werden, in welcher die Positionen 
+    der Avatare dargestellt sind; siehe dazu separate Muster-Beschreibung.    
+  </solution-DE>
+  <confidence>Idea</confidence>
+  <formalization language="(none)">
+    <participant identifier="viewpoint" type="Camera"/>
+    <participant identifier="egoView" type="Camera"/>
+    <participant identifier="roomView" type="Camera"/>
+    <participant identifier="overviewMap" type="UIElement"/>
+  </formalization>
+  <related-patterns>
+    <pattern-link type="is-related-to" patternID="14" collection="B" label="Overview Map" ref="./OverViewMap.xml" />
+  </related-patterns>
+</pattern>

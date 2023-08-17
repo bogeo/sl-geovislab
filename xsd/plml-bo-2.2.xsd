@@ -4,22 +4,23 @@
   <xsd:element name="pattern">
     <xsd:complexType>
       <xsd:sequence>
-        <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1" />
-        <xsd:element name="name-DE" type="xsd:string" minOccurs="0" maxOccurs="1" />
-        <xsd:element name="alias" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
-        <xsd:element name="alias-DE" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
-        <xsd:element name="illustration" minOccurs="0" maxOccurs="1" />
-        <xsd:element name="problem" type="xsd:string" minOccurs="1" maxOccurs="1" />
-        <xsd:element name="problem-DE" type="xsd:string" minOccurs="0 " maxOccurs="1" />
-        <xsd:element name="context" type="xsd:string" minOccurs="0" maxOccurs="1" />
-        <xsd:element name="forces" minOccurs="0" maxOccurs="1" />
-        <xsd:element name="solution" minOccurs="1" maxOccurs="1" />
-        <xsd:element name="synopsis" type="xsd:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        <xsd:element name="name-DE" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="alias" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="alias-DE" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element name="illustration" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="problem" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        <xsd:element name="problem-DE" type="xsd:string" minOccurs="0 " maxOccurs="1"/>
+        <xsd:element name="context" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="forces" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="solution" minOccurs="1" maxOccurs="1"/>
+        <xsd:element name="solution-DE" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="synopsis" type="xsd:string" minOccurs="0" maxOccurs="1"/>
         <xsd:element name="diagram" minOccurs="0" maxOccurs="1">
           <xsd:complexType>
             <xsd:simpleContent>
               <xsd:extension base="xsd:string">
-                <xsd:attribute name="location" type="xsd:string" use="required" />
+                <xsd:attribute name="location" type="xsd:string" use="required"/>
               </xsd:extension>
             </xsd:simpleContent>
           </xsd:complexType>
@@ -27,8 +28,8 @@
         <xsd:element name="evidence" minOccurs="0" maxOccurs="1">
           <xsd:complexType>
             <xsd:sequence>
-              <xsd:element name="example" minOccurs="0" maxOccurs="unbounded" />
-              <xsd:element name="rationale" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="example" minOccurs="0" maxOccurs="unbounded"/>
+              <xsd:element name="rationale" minOccurs="0" maxOccurs="1"/>
             </xsd:sequence>
           </xsd:complexType>
         </xsd:element>
@@ -38,14 +39,16 @@
               <xsd:annotation>
                 <xsd:documentation>Special rating type as PLML extension</xsd:documentation>
               </xsd:annotation>
-              <xsd:extension base="rating" />
+              <xsd:extension base="rating"/>
             </xsd:simpleContent>
           </xsd:complexType>
         </xsd:element>
         <xsd:element name="literature" minOccurs="0" maxOccurs="1">
           <xsd:annotation>
-            <xsd:documentation>As in Bienhaus's PLMLx, literature will be given separate
-              child elements here</xsd:documentation>
+            <xsd:documentation>
+              As in Bienhaus's PLMLx, literature will be given as separate
+              child elements here.
+            </xsd:documentation>
           </xsd:annotation>
           <xsd:complexType>
             <xsd:sequence>
@@ -53,8 +56,7 @@
                 <xsd:complexType>
                   <xsd:simpleContent>
                     <xsd:extension base="xsd:string">
-                      <xsd:attribute name="id" type="xsd:string"
-                        use="optional" />
+                      <xsd:attribute name="id" type="xsd:string" use="optional"/>
                     </xsd:extension>
                   </xsd:simpleContent>
                 </xsd:complexType>
@@ -62,7 +64,7 @@
             </xsd:sequence>
           </xsd:complexType>
         </xsd:element>
-        <xsd:element name="implementation" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="implementation" minOccurs="0" maxOccurs="1"/>
         <xsd:element name="formalization" minOccurs="0" maxOccurs="1">
           <xsd:complexType>
             <xsd:sequence>
@@ -73,10 +75,8 @@
                 <xsd:complexType>
                   <xsd:simpleContent>
                     <xsd:extension base="xsd:string">
-                      <xsd:attribute name="identifier" type="xsd:string"
-                        use="required" />
-                      <xsd:attribute name="type" type="xsd:string"
-                        use="required" />
+                      <xsd:attribute name="identifier" type="xsd:string" use="required"/>
+                      <xsd:attribute name="type" type="xsd:string" use="required"/>
                     </xsd:extension>
                   </xsd:simpleContent>
                 </xsd:complexType>
@@ -85,14 +85,13 @@
                 <xsd:complexType>
                   <xsd:simpleContent>
                     <xsd:extension base="xsd:string">
-                      <xsd:attribute name="location" type="xsd:string"
-                        use="required" />
+                      <xsd:attribute name="location" type="xsd:string" use="required"/>
                     </xsd:extension>
                   </xsd:simpleContent>
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
-            <xsd:attribute name="language" type="xsd:string" use="required" />
+            <xsd:attribute name="language" type="xsd:string" use="required"/>
           </xsd:complexType>
         </xsd:element>
         <xsd:element name="related-patterns" minOccurs="0" maxOccurs="1">
@@ -120,45 +119,41 @@
         <xsd:element name="management" minOccurs="0" maxOccurs="1">
           <xsd:complexType>
             <xsd:sequence>
-              <xsd:element name="author" type="xsd:string" minOccurs="0" maxOccurs="1" />
-              <xsd:element name="revision-number" type="xsd:string" minOccurs="0"
-                maxOccurs="1" />
-              <xsd:element name="creation-date" type="xsd:string" minOccurs="0"
-                maxOccurs="1" />
-              <xsd:element name="last-modified" type="xsd:string" minOccurs="0"
-                maxOccurs="1" />
-              <xsd:element name="credits" type="xsd:string" minOccurs="0"
-                maxOccurs="1" />
+              <xsd:element name="author" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+              <xsd:element name="revision-number" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+              <xsd:element name="creation-date" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+              <xsd:element name="last-modified" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+              <xsd:element name="credits" type="xsd:string" minOccurs="0" maxOccurs="1"/>
             </xsd:sequence>
           </xsd:complexType>
         </xsd:element>
       </xsd:sequence>
-      <xsd:attribute name="patternID" type="xsd:integer" />
-      <xsd:attribute name="collection" type="xsd:string" />
+      <xsd:attribute name="patternID" type="xsd:integer"/>
+      <xsd:attribute name="collection" type="xsd:string"/>
     </xsd:complexType>
   </xsd:element>
   <xsd:simpleType name="ratingAlexandrian">
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="-" />
-      <xsd:enumeration value="*" />
-      <xsd:enumeration value="**" />
+      <xsd:enumeration value="-"/>
+      <xsd:enumeration value="*"/>
+      <xsd:enumeration value="**"/>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="ratingAltern">
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="Idea" />
-      <xsd:enumeration value="reviewed" />
-      <xsd:enumeration value="timeless" />
+      <xsd:enumeration value="Idea"/>
+      <xsd:enumeration value="reviewed"/>
+      <xsd:enumeration value="timeless"/>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="rating">
-    <xsd:union memberTypes="ratingAlexandrian ratingAltern" />
+    <xsd:union memberTypes="ratingAlexandrian ratingAltern"/>
   </xsd:simpleType>
   <xsd:simpleType name="relationPLML">
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="is-a" />
-      <xsd:enumeration value="is-contained-by" />
-      <xsd:enumeration value="contains" />
+      <xsd:enumeration value="is-a"/>
+      <xsd:enumeration value="is-contained-by"/>
+      <xsd:enumeration value="contains"/>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="relationHenzen">
@@ -166,24 +161,24 @@
       <xsd:documentation>Additional relations as defined by Henzen</xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="is-dependent-on" />
-      <xsd:enumeration value="is-alternative-to" />
-      <xsd:enumeration value="is-specialization-of" />
-      <xsd:enumeration value="is-related-to" />
-      <xsd:enumeration value="is-incompatible-to" />
+      <xsd:enumeration value="is-dependent-on"/>
+      <xsd:enumeration value="is-alternative-to"/>
+      <xsd:enumeration value="is-specialization-of"/>
+      <xsd:enumeration value="is-related-to"/>
+      <xsd:enumeration value="is-incompatible-to"/>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="relationExt">
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="is-equal-to" />
-      <xsd:enumeration value="uses" />
-      <xsd:enumeration value="is-supplement-to" />
+      <xsd:enumeration value="is-equal-to"/>
+      <xsd:enumeration value="uses"/>
+      <xsd:enumeration value="is-supplement-to"/>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="relation">
     <xsd:annotation>
       <xsd:documentation>Pattern relation types</xsd:documentation>
     </xsd:annotation>
-    <xsd:union memberTypes="relationPLML relationHenzen relationExt" />
+    <xsd:union memberTypes="relationPLML relationHenzen relationExt"/>
   </xsd:simpleType>
 </xsd:schema>
