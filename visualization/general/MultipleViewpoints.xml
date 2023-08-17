@@ -4,6 +4,7 @@
     <commands>
         <command>Ego view</command>
         <command>Room view</command>
+        <command>Overview map</command>
     </commands>
     <room>all</room>
     <function>
