@@ -4,7 +4,7 @@
 // or a repetition is requested. Note that this control consists of four scripts:
 // 1. This script to control all the lights (inputs and outputs). And 2. the 
 // scripts to control the single lights ("RedLight.lsl", "YellowLight.lsl", 
-// "GreenLight.lsl").
+// "GreenLight.lsl"), which must use the same chat channel. 
  
 // Constants:
 integer CHANNEL = 42; 
