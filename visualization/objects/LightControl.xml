@@ -1,0 +1,30 @@
+<?xml-stylesheet href="../../etc/sl-element.css" type="text/css"?>
+<sl-element category="object" xsi:noNamespaceSchemaLocation="../../xsd/sl-element.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <title>Light control</title>
+    <description>
+        Light control of lecturer speech speed: Invisibly for the lecturer, the avatars 
+        can click on switches that trigger a traffic light display that turns yellow or 
+        red if a slower explanation or a repetition is requested. 
+    </description>
+    <creator>
+        <name>Jeno Yūrej</name>
+        <sl-id>BennoSchmidt</sl-id>
+    </creator>
+    <primitives>
+        <sl-prim>Box</sl-prim>
+        <sl-prim>Cylinder</sl-prim>
+        <sl-prim>Cylinder</sl-prim>
+        <sl-prim>Cylinder</sl-prim>
+    </primitives>
+    <content>
+        <sl-script>/scripts/LightController.lsl</sl-script>
+        <sl-script>/scripts/RedLight.lsl</sl-script>
+        <sl-script>/scripts/YellowLight.lsl</sl-script>
+        <sl-script>/scripts/GreenLight.lsl</sl-script>
+    </content>
+    <room>5</room>
+    <function>
+        <collaboration/>
+        <request/>
+    </function>
+</sl-element>
