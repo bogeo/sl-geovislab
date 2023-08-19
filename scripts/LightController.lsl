@@ -60,8 +60,12 @@ default
 
     touch_start(integer num_detected)
     {
-        setLight(0);
-        objState = 0;
+        key id = llDetectedKey(0); // if of avatar that touched the object
+        key owner = llGetOwner(); // owner id
+        if (id == owner) {  
+            setLight(0);
+            objState = 0;
+        }
     }
     
     listen(integer channel, string name, key id, string message)

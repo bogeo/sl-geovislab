@@ -6,7 +6,7 @@
 // Constants:
 integer CHANNEL = 42; 
 vector COLOR_LIGHT_GREEN = <0, 1, 0>;
-vector COLOR_DARK_GREEN = <0.1, 0.9, 0.1>;
+vector COLOR_DARK_GREEN = <0.45, 0.65, 0.45>;
 
 // Local Variables:
 integer listen_handle;
