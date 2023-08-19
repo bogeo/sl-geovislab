@@ -3,7 +3,7 @@
     <title>Voting tool</title>
     <description>
         Simple voting system, consisting of a green, yellow, orange and red voter object. 
-        Note that this XML description describes only one of those four voring instances. 
+        Note that this XML description describes only one of those four voting instances. 
     </description>
     <creator>
         <name>Jeno Yūrej</name>

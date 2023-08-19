@@ -4,9 +4,11 @@
   <name-DE>Sichtbarer Sprecher</name-DE>
   <problem>TODO engl. description</problem>
   <problem-DE>
-    Die Zuordnung eines Avatars zu vorherigen Beiträgen und Aktionen im virtuellen Lehrraum ist nötig. 
-    Dies macht auch erforderlich, dass eine Wortmeldung (z. B. eine natürlichsprachliches Sprechen) dem 
-    jeweils aktiven Avatar zuordenbar sein muss.
+    Im Regelfall ist es erforderlich, dass eine Wortmeldung (z. B. ein natürlichsprachliches 
+    Sprechen) dem jeweils sprechenden Avatar zugeordenbar ist. In Gesprächsgruppen mitm mehr als zwei 
+    Teilnehmer:innen mag eine die Möglichkeit der Lippenbewegung eines sprechenden Avatars implementiert
+    sein, und auch möglicherweise vorhandene 3D-Sound-Funktionen können die Sprecherortung unterstützen; 
+    im Regelfall reicht dies jedoch auf Grund der schlechten Wahrnehmbarkeit nicht aus.     
   </problem-DE>
   <solution>
     TODO

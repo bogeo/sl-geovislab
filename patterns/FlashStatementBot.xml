@@ -1,15 +1,19 @@
 <?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
 <pattern patternID="13" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <name>Flash Statement Control</name>
-  <name-DE>Blitzstatement-Steuerung</name-DE>
+  <name>Flash Statement Bot</name>
+  <name-DE>Blitzstatement-Bot</name-DE>
+  <alias>Stand-up Meeting (Scrum)</alias>
   <problem>TODO engl. description</problem>
   <problem-DE>
-    Mehrere Studierende möchten sichzu einem Thema äußern, ungeordnete Wortbeiträge der Avatare
+    Mehrere Studierende möchten sich zu einem Thema äußern, ungeordnete Wortbeiträge der Avatare
     sind jedoch schwer inhaltlich zu erfassen ("Durcheinandergerede").    
   </problem-DE>
-  <solution>
-    TODO
-  </solution>
+  <solution>TODO engl. description</solution>
+  <solution-DE>
+    Ein freundlicher Bot registriert die Studierenden, die an der Rederunde teilnehmen möchten. 
+    Sobald die Registrierung abgeschlossen ist, erteilt der Bot den Teilnehmer:innen für eine 
+    voreingestellte Zeit persönlich das Wort und gibt Hinweise zur Zeiteinhaltung.
+  </solution-DE>
   <confidence>Idea</confidence>
   <formalization language="(none)">
     <participant identifier="participant" type="Avatar"/>

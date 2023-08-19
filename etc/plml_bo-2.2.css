@@ -1,96 +1,97 @@
 name::before {
-  color: black;
-  content: 'Pattern: '; 
-  font-weight: bold; 
+  color:black;
+  content:'Pattern: '; 
+  font-weight:bold; 
 }
 
 name-DE::before {
-  color: black;
-  content: 'dt. '; 
-  font-weight: normal; 
+  color:black;
+  content:'dt. '; 
+  font-weight:normal; 
 }
 
 name, name-DE {
-  color: blue;
-  display: block;
-  font-family: sans-serif; 
-  font-weight: bold; 
-  padding: 6px;
+  color:blue;
+  display:block;
+  font-family:sans-serif; 
+  font-weight:bold; 
+  padding:6px;
 }
 
 alias::before {
-  content: 'Alias: '; 
-  font-weight: bold; 
+  content:'Alias: '; 
+  font-weight:bold; 
 }
 
 alias {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
+  display:block;
+  font-family:sans-serif; 
+  padding:6px;
 }
 
 illustration::before {
-  content: 'Illustration: '; 
-  font-weight: bold; 
+  content:'Illustration: '; 
+  font-weight:bold; 
 }
 
 illustration {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
+  display:block;
+  font-family:sans-serif; 
+  padding:6px;
 }
 
 problem::before {
-  content: 'Problem: '; 
-  font-weight: bold; 
+  content:'Problem: '; 
+  font-weight:bold; 
 }
 
 solution::before {
-  content: 'Solution: ';
-  font-weight: bold; 
+  content:'Solution: ';
+  font-weight:bold; 
 }
 
-problem, problem-DE, solution {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
-  white-space: pre-wrap;
-  font-weight: normal; 
+problem, problem-DE, solution, solution-DE {
+  display:block;
+  font-family:sans-serif; 
+  font-style:italic; 
+  font-weight:normal; 
+  padding:6px;
+  white-space:pre-wrap;
 }
 
 evidence::before {
-  content: 'Evidence: '; 
-  font-weight: bold; 
+  content:'Evidence: '; 
+  font-weight:bold; 
 }
 
 evidence {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
-  white-space: pre-wrap;
+  display:block;
+  font-family:sans-serif; 
+  padding:6px;
+  white-space:pre-wrap;
 }
 
 rationale::before {
-  content: '* Rationale '; 
+  content:'* Rationale '; 
 }
 
 rationale {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
-  white-space: pre-wrap;
+  display:block;
+  font-family:sans-serif; 
+  padding:6px;
+  white-space:pre-wrap;
 }
 
 confidence::before {
-  content: 'Confidence: '; 
-  font-weight: bold; 
+  content:'Confidence: '; 
+  font-weight:bold; 
 }
 
 confidence {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
-  white-space: pre-wrap;
+  display:block;
+  font-family:sans-serif; 
+  padding:6px;
+  white-space:pre-wrap;
 }
 
 formalization {
@@ -98,86 +99,87 @@ formalization {
 }
 
 related-patterns::before {
-  content: 'Related patterns: '; 
-  font-family: sans-serif; 
-  font-weight: bold; 
+  content:'Related patterns: '; 
+  font-family:sans-serif; 
+  font-weight:bold; 
 }
 
 related-patterns {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
+  display:none;
+  font-family:sans-serif; 
+  padding:6px;
 }
 
 related-patterns::after {
+  display:none;
   content: 'See XML source file,'; 
   font-family: sans-serif; 
 }
 
 literature::before {
-  content: 'Literature: '; 
-  font-weight: bold; 
+  content:'Literature: '; 
+  font-weight:bold; 
 }
 
 literature {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
-  white-space: pre-wrap;
+  display:block;
+  font-family:sans-serif; 
+  padding:6px;
+  white-space:pre-wrap;
 }
 
 ref::before {
-  content: '*  '; 
-  font-family: sans-serif; 
-  font-weight: bold; 
+  content:'*  '; 
+  font-family:sans-serif; 
+  font-weight:bold; 
 }
 
 ref {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
+  display:block;
+  font-family:sans-serif; 
+  padding:6px;
 }
 
 author::before {
-  content: 'Author: ';
-  font-weight: bold; 
+  content:'Author: ';
+  font-weight:bold; 
 }
 
 author {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
+  display:block;
+  font-family:sans-serif; 
+  padding:6px;
 }
 
 revision-number::before {
-  content: 'Revision number: ';
-  font-weight: bold; 
+  content:'Revision number: ';
+  font-weight:bold; 
 }
 
 revision-number {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
+  display:block;
+  font-family:sans-serif; 
+  padding:6px;
 }
 
 creation-date::before {
-  content: 'Creation date: ';
-  font-weight: bold; 
+  content:'Creation date: ';
+  font-weight:bold; 
 }
 
 creation-date {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
+  display:block;
+  font-family:sans-serif; 
+  padding:6px;
 }
 
 last-modified::before {
-  content: 'Last modified: ';
-  font-weight: bold; 
+  content:'Last modified: ';
+  font-weight:bold; 
 }
 
 last-modified {
-  display: block;
-  font-family: sans-serif; 
-  padding: 6px;
+  display:block;
+  font-family:sans-serif; 
+  padding:6px;
 }
