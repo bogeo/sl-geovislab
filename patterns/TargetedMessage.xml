@@ -1,0 +1,29 @@
+<?xml-stylesheet href="../etc/plml_bo-2.2.css" type="text/css"?>
+<pattern patternID="15" xsi:noNamespaceSchemaLocation="../xsd/plml-bo-2.2.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <name>Targeted message</name>
+  <name-DE>Gezielte Nachricht</name-DE>
+  <problem>TODO engl. description</problem>
+  <problem-DE>
+    Sich wiederholende Hinweismeldungen stören häufig, indem z. B. Nutzer:innen ablenken 
+    oder ermüden. Die Meldungen sollen somit auf das Nötige beschränkt werden, d. h. nur den 
+    Nutzer:innen gegeben werden, die es in einer bestimmten Situation tatsächlich betrifft. 
+    (U. U. ist hierbei auch gefordert, dass andere Nutzer:innen nicht erfahren, dass der Hinweis 
+    gegeben wurde.)
+  </problem-DE>
+  <solution>TODO  engl. description</solution>
+  <solution-DE>
+    Basierend auf Kontextinformation über Nutzer:innen und deren Verhalten und Rückmeldungen 
+    versendet eine Bot-Komponente die Hinweismeldungen gezielt. Beispiele für Kontextinformation:
+    Jemand klickt ein Objekt erstmalig an, ein spezieller Fehler wird ausgelöst, die Historie
+    der Nutzer:innenaktionen deutet darauf hin, dass eine Hinweis sinnvoll/nicht sinnvoll ist, 
+    der/die Nutzer:in hat dem Bot Vorlieben mitgeteilt (z. B.: "Diese Nachricht nicht mehr
+    anzeigen").  
+  </solution-DE>
+  <confidence>Idea</confidence>
+  <formalization language="(none)">
+    <participant identifier="avatar" type="Avatar"/>
+    <participant identifier="context" type="ContextInfo"/>
+    <participant identifier="bot" type="ProgramScript"/>
+    <participant identifier="message" type="String"/>
+  </formalization>
+</pattern>

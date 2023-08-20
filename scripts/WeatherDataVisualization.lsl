@@ -79,12 +79,15 @@ displayResult(float val)
         percentage = (val + 10.0) / (40.0 + 10.0); 
         unit = "°C";
         if (val < 18.0) {
-            barColor = <0.0, 0.5, 1.0>; // blue/cyan
+            barColor = <0.0, 0.5, 1.0>; // blue
         }
-        if (val >= 18.0 && val < 25.0) {
+        if (val >= 18.0 && val < 19.0) {
+            barColor = <0.0, 1.0, 1.0>; // cyan
+        }
+        if (val >= 19.0 && val < 23.0) {
             barColor = <0.0, 1.0, 0.0>; // green
         }
-        if (val >= 69.0) {
+        if (val >= 23.0) {
             barColor = <1.0, 0.0, 0.0>; // red
         }
     }

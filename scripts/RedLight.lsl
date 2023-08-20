@@ -10,13 +10,14 @@ vector COLOR_DARK_RED = <0.65, 0.45, 0.45>;
 
 // Local Variables:
 integer listen_handle;
+integer firstTouch = TRUE;
 
 lightOn() {
     llSetPrimitiveParams([
         PRIM_COLOR, ALL_SIDES, COLOR_LIGHT_RED, 1.0,
         PRIM_FULLBRIGHT, ALL_SIDES, TRUE,
         PRIM_POINT_LIGHT, TRUE, COLOR_LIGHT_RED, 1.0, 10.0, 0.6, 
-        PRIM_GLOW, ALL_SIDES, 0.2]);          
+        PRIM_GLOW, ALL_SIDES, 0.1]);          
 }
 
 lightOff() {
@@ -31,14 +32,23 @@ default
 {
     state_entry()
     {
-        lightOff();
-         
+        lightOff(); 
+
         // Registers the "listener":
         listen_handle = llListen(CHANNEL, "", "", "");
     }
 
     touch_start(integer total_number)
     {
+        if (firstTouch) {
+            key av = llDetectedKey(0); // if of avatar that touched the object
+            string msg = "Hallo, " + llKey2Name(av) + "!";
+            msg += "\nDiese Nachricht siehst nur du.";  
+            msg += "\n\nKlicke bei Bedarf ein zweites Mal auf Rot...";
+            llInstantMessage(av, msg);
+            firstTouch = FALSE;
+        }  
+
         llSay(CHANNEL, "report_red");
     }
     
