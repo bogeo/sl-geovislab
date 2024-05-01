@@ -4,7 +4,7 @@
 // Constants:
 integer CHANNEL = 50; 
 vector FLOAT_TEXT_COLOR = <0.2, 1.0, 0.2>;
-float FLASH_TALK_TIME = 60.0; // Time given in secs
+integer FLASH_TALK_TIME = 30; // Time given in secs
 
 // Local Variables:
 integer phase = 0; // 0 = inactive, 1 = registering phase, 2 = reporting phase
@@ -121,7 +121,7 @@ default
             }   
         }
         
-        if (message == "begin") {
+        if (message == "run" || message == "begin") {
             integer numberOfParticipants = llGetListLength(nameList);              
             if (numberOfParticipants == 0) {
                 string msg = "Leider sind keine Teilnehmer:innen angemeldet.";
@@ -161,8 +161,23 @@ default
             }   
         }
         
+        if (llGetSubString(message, 0, 3) == "time") {
+            list tokens = llParseString2List(message, [" "], []);
+            integer val = (integer) llList2String(tokens, 1);
+            if (val < 10 || val > 5 * 60) {
+                llSay(0, "Unzulässige Redezeitangabe!");
+            }
+            else {
+                FLASH_TALK_TIME = val;
+                string text = "Die Redezeit ist nun auf ";
+                text += (string) FLASH_TALK_TIME;
+                text += " gesetzt.";
+                llSay(0, text);
+            }
+        }
+
         if (message == "help" || message == "?") {
-            llSay(0, "Available commands: new begin list help");
+            llSay(0, "Available commands: new run list time help");
         }
     }
 }
