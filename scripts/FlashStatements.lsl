@@ -1,4 +1,4 @@
-// Script to realize a flash statement round
+// Script to realize a simple bot to moderate a "flash statement round"
 // (as known from Scrum stand-up meetings)
 
 // Constants:
@@ -132,7 +132,10 @@ default
                 return;
             } 
             else {
-                string text = "Jede(r) Teilnehmer:in hat 120 Sekunden Zeit!"; 
+                string text = "Jede(r) Teilnehmer:in hat ";
+                text += (string) FLASH_TALK_TIME;
+                text += " Sekunden Zeit!"; 
+                
                 updateFloatText(text);
                 llSleep(5.0);
                 updateFloatText("In 5 Sekunden geht es los. ");
